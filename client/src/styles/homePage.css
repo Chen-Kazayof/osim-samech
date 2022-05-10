@@ -1,3 +1,12 @@
+h1{
+    background-color: aqua;
+}
+
+h1:hover {
+    background-color: blue;
+}
+
+
 .ruler {
     /* background-color: rgb(91, 209, 248); */
     display: flex;
@@ -17,7 +26,7 @@ body {
     font-family: Arial;
     font-size: 11px;
     color: #0c0b0b;
-    background: #ffffff url(../../img/body_back.jpg) no-repeat top center fixed;
+    /* background: #ffffff url(../../img/body_back.jpg) no-repeat top center fixed; */
     background-size: cover;
 }
 
@@ -50,6 +59,7 @@ img {
     float: left;
     width: 27%;
     padding: 3%;
+
   }
   
   /* Clearfix (clear floats) */
