@@ -1,13 +1,19 @@
 import logo from './logo.svg';
-import { HomePage } from './components/HomePage';
+// import { HomePage } from './components/HomePage';
 import './App.css';
+import{ Donations } from './components/Donations';
+import{ About } from './components/About';
+
+
 
 function App() {
   return (
     <div className="App">
-      <HomePage username="chen" />
-      <img src="/images/image1.jpg" />
+      <Donations />
+      {/* <About /> */}
+      {/* <img src="/images/image1.jpg" /> */}
     </div>
+    
   );
 }
 
