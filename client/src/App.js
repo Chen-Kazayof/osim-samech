@@ -4,16 +4,21 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import { Gallery } from './components/Gallery';
 import { NavBar } from './components/Navbar';
+import { ContactUs } from './components/ContactUs';
+import { AboutUs } from './components/AboutUs';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <BrowserRouter>
       <NavBar />
       {/* navbar */}
         <Routes>
-          <Route exact path='/' element={<HomePage />} />
-          <Route path='/gallery' element={<Gallery />} />
+          <Route exact path='/' element={<HomePage/>} />
+          <Route path='/Gallery' element={<Gallery/>} />
+          <Route path='/AboutUs' element={<AboutUs/>}/>
+          <Route path='/ContactUs' element={<ContactUs/>} />
+          
         </Routes>
       </BrowserRouter>
       {/* <HomePage username="chen" />

@@ -1,3 +1,21 @@
+
+// import"../styles/homePage.css"
+
+// export const HomePage = () => {
+
+    
+//     return (
+//         <div>
+//                 <a class ="help">!שלום</a>
+//                 <a class ="help2">נא להקיש כתובת מייל וסיסמה להתחברות</a>
+//                 <input class="frame inframe " type="text" placeholder="מספר טלפון :"  name="umane" required></input>
+//                  <input class="frame2 inframe" type="password" placeholder="סיסמה :" name="psw" required></input>
+//                  <a class ="forgatKod" href="" >  שכחתי סיסמה  </a>
+//                  <button type="button" class="cancelbtn"><p>אישור</p></button>
+                 
+//                     </div>
+//                 )
+// }
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react"
@@ -20,15 +38,11 @@ export const HomePage = () => {
         setIndex(index => (index === IMAGES.length - 1) ? 0 : index + 1);
     }
 
-    // function displayPreviousImage() {
-    //     x = (x <= 0) ? images.length - 1 : x - 1;
-    //     document.getElementById("img").src = images[x];
-    // }
-
     return (
         <div>
-           homePage
+            
            <img src={IMAGES[index]} />
+            <p>העשיה שלנו </p>
         </div>
     )
 }

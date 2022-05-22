@@ -3,10 +3,14 @@ import { Link } from "react-router-dom"
 export const NavBar = () => {
 
     return (
-        <div>
-            <Link to="/"><h1>home</h1></Link>
-            <Link to="/gallery">gallery</Link>
-           {/* <img src={} /> */}
+        <div class="topnav">
+            <br></br>
+            <Link to="/"><a>דף הבית  </a>  </Link>
+            <Link to="/Gallery"><a>התחברות</a> </Link>
+            <Link to ="/AboutUs"><a>אודות</a> </Link>
+            <Link to ="/ContactUs"><a>צור קשר</a></Link>
+            {/* <img src="imagelog.png"></img> */}
+    
         </div>
     )
 }

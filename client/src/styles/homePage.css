@@ -1,10 +1,5 @@
-h1{
-    background-color: aqua;
-}
-
-h1:hover {
-    background-color: blue;
-}
+@import 'https://fonts.googleapis.com/css?family=Heebo:400,700&subset=hebrew';
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
 
 .ruler {
@@ -13,14 +8,7 @@ h1:hover {
     flex-direction: row;
 }
 
-/* #logo{
-    } */
-h3 {
-    text-align: right;
-    direction: rtl;
-    margin: 57px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 body {
     font-family: Arial;
@@ -36,25 +24,8 @@ img {
     width: auto\9;
     /* ie8 */
 }
-.help{
-     position:relative;
-}
-.help .but {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-   
-    
-}
+
+
 .column {
     float: left;
     width: 27%;
@@ -69,3 +40,217 @@ img {
     clear: both;
     display: table;
   }
+  .help{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 671px;
+    top: 150px;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 65px;
+    
+    color: #18347E;
+    
+  }
+  .help2{
+    position: absolute;
+    width: 749px;
+    height: 50px;
+    left: 416px;
+    top: 230px;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    
+    color: #18347E;
+    
+  }
+ 
+  .frame{
+   box-sizing: border-box;
+  
+  position: absolute;
+  width: 531px;
+  height: 82px;
+  left: 513px;
+  top: 310px;
+  
+  border: 4px solid #FFE0D3;
+  /* filter: drop-shadow(0px 4px 29px rgba(0, 0, 0, 0.25)); */
+  border-radius: 29px;
+  }
+  .help3{
+    position: absolute;
+    width: 749px;
+    height: 50px;
+    left: 570px;
+    top: 400px;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 46px;
+    
+    color: #18347E;
+  }
+  .frame2{
+    box-sizing: border-box;
+  
+  position: absolute;
+  width: 531px;
+  height: 82px;
+  left: 513px;
+  top: 450px;
+  
+  border: 4px solid #FFE0D3;
+  /* filter: drop-shadow(0px 4px 29px rgba(0, 0, 0, 0.25)); */
+  border-radius: 29px;
+   }
+   .frame3{
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 531px;
+    height: 82px;
+    left: 513px;
+    top: 545px;
+    
+    border: 4px solid #FFE0D3;
+    /* filter: drop-shadow(0px 4px 29px rgba(0, 0, 0, 0.25)); */
+    border-radius: 29px;
+   }
+   .inframe{
+   direction: rtl;
+   font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+    
+    color: rgba(24, 52, 126, 0.65);
+    border: 4px solid #FFE0D3;
+
+
+    
+   }
+
+
+      /* שכחתי סיסמה */
+.forgatKod{
+    
+position: absolute;
+width: 174px;
+height: 38px;
+left: 527px;
+top: 550px;
+
+font-family: 'Heebo';
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 28px;
+
+color: rgba(24, 52, 126, 0.65);
+
+}
+.cancelbtn{
+    position: absolute;
+    width: 174px;
+    height: 70px;
+    left: 687px;
+    top: 650px;
+    margin-top: 5px;
+    border: none;
+    background: #18347E;
+    border-radius: 34px;
+}
+p{
+    
+    color: #FFE0D3;
+    font-family: 'Heebo';
+    font-size: large;
+    
+
+}
+.acspt{
+    position: absolute;
+width: 125px;
+height: 35px;
+left: 700px;
+top: 400px;
+
+font-family: 'Heebo';
+font-style: normal;
+font-weight: 600;
+font-size: 37px;
+line-height: 45px;
+
+color: #18347E;
+
+}
+.inacspt{
+    box-sizing: border-box;
+
+position: absolute;
+width: 36px;
+height: 40px;
+left: 1081px;
+top: 500px;
+
+border: 2px solid #18347E;
+filter: drop-shadow(0px 4px 29px rgba(0, 0, 0, 0.25));
+
+}
+.inacspt2{
+    position: absolute;
+    width: 644px;
+    height: 45px;
+    left: 398px;
+    top: 500px;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 45px;
+    /* identical to box height */
+    
+    
+    color: #18347E;
+    
+
+}
+.pratim{
+  width: 7px;
+  height: 31px;
+   font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+  margin-top: 200px;
+  color: #18347E;
+}
+
+#details{
+  margin-left: 92%;
+}
+
+#list{
+  margin-left: 84%;
+  opacity: 0.4;
+}
+
+#okey{
+  margin-left: 76%;
+  opacity: 0.4;
+}
