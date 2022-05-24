@@ -1,6 +1,14 @@
+
+@import 'https://fonts.googleapis.com/css?family=Heebo:400,700&subset=hebrew';
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+
 .App {
   text-align: center;
+
+  height: 743px;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +44,36 @@
     transform: rotate(360deg);
   }
 }
+/* The navbar */
+.topnav {
+    overflow: hidden;
+    background-color: rgba(154, 197, 209, 0.13);;
+
+}
+
+/* Navbar links */
+.topnav a {
+    float: right;
+    color: #18347E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.topnav a:hover {
+    background-color: 18347E;
+    color: #b60a0a;
+}
+/* img{
+  max-width: 10;
+ 
+} */
+
