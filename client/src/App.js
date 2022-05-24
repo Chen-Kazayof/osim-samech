@@ -1,17 +1,28 @@
 import logo from './logo.svg';
-// import { HomePage } from './components/HomePage';
+import { HomePage } from './components/HomePage';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
-import{ Donations } from './components/Donations';
-import{ About } from './components/About';
-
-
+import { Gallery } from './components/Gallery';
+import { NavBar } from './components/Navbar';
+import { ContactUs } from './components/ContactUs';
+import { AboutUs } from './components/AboutUs';
 
 function App() {
   return (
-    <div className="App">
-      <Donations />
-      {/* <About /> */}
-      {/* <img src="/images/image1.jpg" /> */}
+    <div className="App" >
+      <BrowserRouter>
+      <NavBar />
+      {/* navbar */}
+        <Routes>
+          <Route exact path='/' element={<HomePage/>} />
+          <Route path='/Gallery' element={<Gallery/>} />
+          <Route path='/AboutUs' element={<AboutUs/>}/>
+          <Route path='/ContactUs' element={<ContactUs/>} />
+          
+        </Routes>
+      </BrowserRouter>
+      {/* <HomePage username="chen" />
+      <img src="/images/image1.jpg" /> */}
     </div>
     
   );
