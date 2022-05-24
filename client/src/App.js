@@ -5,9 +5,9 @@ import './App.css';
 import { Gallery } from './components/Gallery';
 import { NavBar } from './components/Navbar';
 import { ContactUs } from './components/ContactUs';
-import { AboutUs } from './components/AboutUs';
+import { About } from './components/About';
 import { OurActive } from './components/OurActive';
-import { Donation } from './components/Donation';
+import { Donations } from './components/Donations';
 import { Volonteere } from './components/Volonteere';
 
 
@@ -22,8 +22,8 @@ function App() {
           <Route exact path='/' element={<HomePage/>} />
           <Route path='/Gallery' element={<Gallery/>} />
           <Route path='/OurActive' element={<OurActive/>}/>
-          <Route path='/AboutUs' element={<AboutUs/>}/>
-          <Route path='/Donation' element={<Donation/>}/>
+          <Route path='/About' element={<About/>}/>
+          <Route path='/Donations' element={<Donations/>}/>
           <Route path='/Volonteere' element={<Volonteere/>}/>
           <Route path='/ContactUs' element={<ContactUs/>} />
           
