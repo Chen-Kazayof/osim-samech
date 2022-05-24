@@ -1,0 +1,108 @@
+/* כותרת תרומות*/
+.title{
+    color: rgb(255, 112, 112);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+}
+/* התרומה שלך תוסיף להם שמחה*/
+ .sec_title{
+    font-size: 40px;  
+    margin-right: -30px;
+    color: rgb(247, 83, 83);
+    font-weight: bold;
+}
+ ul{
+    display: inline-block;
+    list-style: none; 
+     font-size: 1.5em;
+    margin-top: -16px;
+   
+}
+ body ul:nth-child(2){
+     font-size: 1.3em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+li{ 
+    height: 40px;  
+} 
+
+/* איך תרצו לתרום */
+p{
+    font-size: 18px;
+    text-align: center;
+    /* margin-right: 40px; */
+     margin-bottom: 30px;
+}
+ 
+/* .front{
+    display: flex;
+}
+
+.subtitle{
+    flex-direction: column;
+    background-color: brown;
+}  */
+
+/* .subtitle{
+    display: flex;
+  flex-direction: row-reverse;
+    
+    color: rgb(247, 83, 83);
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+}
+.don{
+    font-size: 25px;
+}
+.happy{
+    background-color: blueviolet;
+    font-size: 40px;
+    margin-right: 15px;
+} */
+
+/* הוראת קבע ואשראי */
+/* .link{
+    font-size: 25px;
+    padding: 10px;
+    width: 300px; 
+    height: 30px; 
+    display:flex; */
+    /* flex-direction: row; */
+    /* background-color:rgb(243, 145, 145);
+    float: right;
+    font-weight: 900px;
+    margin-top: 30px;
+    margin-left: -40px;
+    margin-right: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.link>a{
+    flex-direction: row;
+    padding: 5px;
+    color: black; 
+    text-decoration: none;
+} */
+
+
+
+/* העברה בביט או טלפון */
+/* .bitphone{
+font-size: 20px;
+
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.kea{
+    background-color: rgb(148, 48, 48);
+    text-align: center;
+} */
+
+
