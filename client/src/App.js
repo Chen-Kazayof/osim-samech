@@ -6,6 +6,11 @@ import { Gallery } from './components/Gallery';
 import { NavBar } from './components/Navbar';
 import { ContactUs } from './components/ContactUs';
 import { AboutUs } from './components/AboutUs';
+import { OurActive } from './components/OurActive';
+import { Donation } from './components/Donation';
+import { Volonteere } from './components/Volonteere';
+
+
 
 function App() {
   return (
@@ -16,7 +21,10 @@ function App() {
         <Routes>
           <Route exact path='/' element={<HomePage/>} />
           <Route path='/Gallery' element={<Gallery/>} />
+          <Route path='/OurActive' element={<OurActive/>}/>
           <Route path='/AboutUs' element={<AboutUs/>}/>
+          <Route path='/Donation' element={<Donation/>}/>
+          <Route path='/Volonteere' element={<Volonteere/>}/>
           <Route path='/ContactUs' element={<ContactUs/>} />
           
         </Routes>

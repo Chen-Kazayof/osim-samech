@@ -1,21 +1,4 @@
 
-// import"../styles/homePage.css"
-
-// export const HomePage = () => {
-
-    
-//     return (
-//         <div>
-//                 <a class ="help">!שלום</a>
-//                 <a class ="help2">נא להקיש כתובת מייל וסיסמה להתחברות</a>
-//                 <input class="frame inframe " type="text" placeholder="מספר טלפון :"  name="umane" required></input>
-//                  <input class="frame2 inframe" type="password" placeholder="סיסמה :" name="psw" required></input>
-//                  <a class ="forgatKod" href="" >  שכחתי סיסמה  </a>
-//                  <button type="button" class="cancelbtn"><p>אישור</p></button>
-                 
-//                     </div>
-//                 )
-// }
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react"
@@ -30,7 +13,7 @@ export const HomePage = () => {
     const interval = useRef(null);
 
     useEffect(() => {
-        interval.current = setInterval(displayNextImage, 3000); 
+        interval.current = setInterval(displayNextImage, 3000);
         return () => clearInterval(interval.current)
     }, [])
 
@@ -40,9 +23,34 @@ export const HomePage = () => {
 
     return (
         <div>
-            
-           <img src={IMAGES[index]} />
+            <img src={IMAGES[index]} />
             <p>העשיה שלנו </p>
+            <div class="column flip-box">
+
+                <div class="flip-box  flip-box-inner flip-box-front">
+
+                    <img src="image2.jpg" />
+                </div>
+                <div class="flip-box-back">
+                    <h2>עלות משמחים</h2>
+                    <p>מה שאתפ עושים לאנשים בעת עזרתכם</p>
+                </div>
+            </div>
+
+            <div class="column flip-box">
+
+                <div class="flip-box  flip-box-inner flip-box-front">
+
+                    <img src="image1.jpg" />
+                </div>
+                <div class="flip-box-back">
+                    <h2>בת שולחנות ש</h2>
+                    <p>מה שאתפ עושים לאנשים בעת עזרתכם</p>
+                </div>
+            </div>
         </div>
+        // </div>
+
+        // </div>
     )
 }

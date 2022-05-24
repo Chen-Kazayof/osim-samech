@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
 
+
 .App {
   text-align: center;
   background-color: #F2FCFF;
@@ -51,21 +52,25 @@
 
 }
 
+/* a{
+
+} */
+
 /* Navbar links */
 .topnav a {
     float: right;
     color: #18347E;
     text-align: center;
-    padding: 14px 16px;
+    padding: 2% 0%;
     text-decoration: none;
     display: block;
     text-align: center;
-    padding: 15px 40px;
     text-decoration: none;
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
+    
 }
 
 .topnav a:hover {
