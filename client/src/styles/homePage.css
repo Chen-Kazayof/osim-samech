@@ -36,6 +36,7 @@
 
 }  */
  img {
+
   max-width: 100%;
   /* height: auto;
   width: auto\9; */
@@ -122,11 +123,11 @@ padding: 1%;
 /* למרכז שלוש תמונות אחד ליד השני */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 
-.yimage{
+/* .yimage{
   position:relative;
   
 }
 .yimagetop{
-  /* position:absolute; */
+  position:absolute;
 
-}
+} */
