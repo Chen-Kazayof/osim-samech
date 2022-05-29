@@ -8,15 +8,12 @@
   height: 45px;
   left: 398px;
   top: 500px;
-  
   font-family: 'Heebo';
   font-style: normal;
   font-weight: 500;
   font-size: 37px;
   line-height: 45px;
   /* identical to box height */
-  
-  
   color: #18347E;
   
 
@@ -32,39 +29,46 @@
   background: #18347E;
   border-radius: 34px;
 }
-p{
-  
-  color: #FFE0D3;
-  font-family: 'Heebo';
+/* p{
+    font-family: 'Heebo';
   font-size: large;
   
 
-}
+}  */
  img {
+
   max-width: 100%;
-  height: auto;
-  width: auto\9;
+  /* height: auto;
+  width: auto\9; */
   /* ie8 */
 }
 .column {
-  float: left;
-  width: 33%;
+  float:right;
+  
+  width: 30%;
   /* padding: 20px; */
 }
 
 
 /* Clearfix (clear floats) */
 .row::after {
-  content: "";
+  /* content: ""; */
   clear: both;
   display: table;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5%;
+  margin :auto;
+  /* justify-content: center; */
 }
 
 .flip-box {
   /* background-color: transparent; */
   width: 300px;
-  /* height: 200px;  */
-  border: 1px solid #f1f1f1;
+  height: 300px; 
+  /* padding: 0%; */
+  /* border: 1px solid #f1f1f1; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -98,7 +102,32 @@ p{
 } */
 /* Style the back side */
 .flip-box-back {
-  background-color: rgb(51, 58, 66);
+  /* background-color: rgb(51, 58, 66); */
   /* color: white; */
   transform: rotateY(180deg);
 }
+/* זה המילה העשיה שלנו */
+.ywedo{
+ 
+  /* position: absolute; */
+font-family: 'Heebo';
+/* font-style: normal; */
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+color: #F30000;
+text-align: center;
+padding: 3%;
+padding: 1%;
+}
+/* למרכז שלוש תמונות אחד ליד השני */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+/* .yimage{
+  position:relative;
+  
+}
+.yimagetop{
+  position:absolute;
+
+} */

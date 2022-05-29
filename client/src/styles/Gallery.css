@@ -1,0 +1,31 @@
+
+
+.gallery{
+    background-color:rgb(247, 238, 238);
+}
+.image{
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+}
+.image:focus{
+    background-color: brown;
+}
+.title{
+    background-color:rgb(247, 238, 238);
+    font-size: large;
+    direction: rtl;
+    color: blue;
+}
+.title:hover {
+    background-color: rgb(247, 238, 238);
+}
+.subTitle{
+    background-color:rgb(247, 238, 238)brown;
+    font-size: large;
+    direction: rtl;
+    color: blue;
+}
+.galleryTable{
+    width: 100%;
+}

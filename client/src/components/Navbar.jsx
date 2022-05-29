@@ -3,7 +3,8 @@ import { Link } from "react-router-dom"
 export const NavBar = () => {
 
     return (
-        <div class="topnav">
+        
+        <div class="topnav ">
             <br></br>
             <Link to="/"><a>דף הבית  </a>  </Link>
             <Link to ="/About"><a>אודות</a> </Link>
@@ -12,9 +13,9 @@ export const NavBar = () => {
             <Link to="/Donations"><a>תרומות</a> </Link>
             <Link to="/Volonteere"><a>התנדבות</a> </Link>
             <Link to ="/ContactUs"><a>צור קשר</a></Link>
-            {/* <img src="/imagelog.png"/> */}
-            {/* <img src="imagelog.png"></img> */}
-    
-        </div>
+            <img src="/imagelog.png" alt="Logo image" />
+
+            </div>
+
     )
 }
