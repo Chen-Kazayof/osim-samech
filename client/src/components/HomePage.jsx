@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { useState } from "react"
 import "../styles/homePage.css"
 
-const IMAGES = ["/image3.jpg", "/topimage.jpg", "/image3.jpg"]
+const IMAGES = ["/image3.jpg", "/image3.jpg", "/image3.jpg"]
 
 export const HomePage = () => {
 

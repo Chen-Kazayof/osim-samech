@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import { Gallery } from './components/Gallery';
 import { NavBar } from './components/Navbar';
-import { ContactUs } from './components/ContactUs';
+import { AboutUs } from './components/AboutUs';
 import { About } from './components/About';
 import { OurActive } from './components/OurActive';
 import { Donations } from './components/Donations';
@@ -26,7 +26,7 @@ function App() {
           <Route path='/About' element={<About/>}/>
           <Route path='/Donations' element={<Donations/>}/>
           <Route path='/Volonteere' element={<Volonteere/>}/>
-          <Route path='/ContactUs' element={<ContactUs/>} />
+          <Route path='/AboutUs' element={<AboutUs/>} />
           
         </Routes>
       </BrowserRouter>
