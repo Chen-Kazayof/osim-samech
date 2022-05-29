@@ -13,8 +13,7 @@ export const Donations = (props) => {
 
   return (
     <div>
-      <h3>(סרגל כלים)</h3>
-      <h1 className="title">תרומות</h1>
+      {/* <h1 className="title">תרומות</h1> */}
       <ul>
         <li className="sec_title">שמחה</li>
       </ul>

@@ -1,39 +1,40 @@
 /* כותרת תרומות*/
-.title{
+/* .title{
     color: rgb(255, 112, 112);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 70px;
     font-weight: bolder;
     text-align: center;
-}
+} */
 /* התרומה שלך תוסיף להם שמחה*/
  .sec_title{
-    font-size: 40px;  
+    font-size: 50px;  
     margin-right: -30px;
-    color: rgb(247, 83, 83);
+    color: rgb(255, 0, 0);
     font-weight: bold;
 }
  ul{
     display: inline-block;
     list-style: none; 
-     font-size: 1.5em;
-    margin-top: -16px;
+    margin-top: 30px;
    
 }
  body ul:nth-child(2){
-     font-size: 1.3em;
+    font-size: 35px;
     font-family:Arial, Helvetica, sans-serif;
 }
 li{ 
-    height: 40px;  
+    color: rgb(6, 6, 73);
+    font-weight: bold;
 } 
 
 /* איך תרצו לתרום */
 p{
     font-size: 18px;
     text-align: center;
+    color: rgb(6, 6, 73);
     /* margin-right: 40px; */
-     margin-bottom: 30px;
+    margin-bottom: 30px;
 }
  
 /* .front{
