@@ -23,10 +23,13 @@ export const Donations = (props) => {
 
       <p>?איך תרצו לתרום</p>
 
-      {/* <div className="link">
-        <a href="https://office.kesherhk.info/Clearing.aspx?id=11458" target="_blank">הוראת קבע</a>
-      </div>
+
       <div className="link">
+        <a href="https://office.kesherhk.info/Clearing.aspx?id=11458" target="_blank">הוראת קבע</a>
+        <a href="https://office.kesherhk.info/Clearing.aspx?id=8048" target="_blank">תרומה באשראי</a>
+
+      </div>
+      {/* <div className="link">
         <a href="https://office.kesherhk.info/Clearing.aspx?id=8048" target="_blank">תרומה באשראי</a>
       </div> */}
 
@@ -66,7 +69,7 @@ export const Donations = (props) => {
       </table> */}
 
 
-      
+
 
       {/* <div className="bitphone">
       <p className="subtitle">:העברה באמצעות ביט/טלפון</p>

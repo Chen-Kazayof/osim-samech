@@ -6,6 +6,20 @@
     font-weight: bolder;
     text-align: center;
 } */
+
+.link{
+    display: flex;
+    
+}
+.link>a{
+    background-color: blueviolet;
+    flex-direction: row;
+    text-align: center;
+    padding: 15px;
+     margin-left: 330px;
+    margin-right: 200px;
+
+}
 /* התרומה שלך תוסיף להם שמחה*/
  .sec_title{
     font-size: 50px;  
