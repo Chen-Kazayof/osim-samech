@@ -12,7 +12,7 @@ export const NavBar = () => {
             <Link to="/Donations"><a>תרומות</a> </Link>
             <Link to="/Volonteere"><a>התנדבות</a> </Link>
             <Link to ="/ContactUs"><a>צור קשר</a></Link>
-            {/* <img src="/imagelog.png"/> */}
+            <img class="yimg"src="/imagelog.png"/>
             {/* <img src="imagelog.png"></img> */}
     
         </div>

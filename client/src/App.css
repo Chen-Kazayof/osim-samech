@@ -48,37 +48,44 @@
 /* The navbar */
 .topnav {
     overflow: hidden;
-    background-color: rgba(154, 197, 209, 0.13);;
-
+    background: #0C193D;
+    box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
+   
 }
-
-/* a{
-
-} */
-
+a{
+  width: 150px;
+}
 /* Navbar links */
 .topnav a {
-    float: right;
-    color: #18347E;
+
+    float:right;
+    color: #FFFFFF;
     text-align: center;
-    padding: 2% 0%;
-    text-decoration: none;
+    padding: 1% 0%;
     display: block;
     text-align: center;
     text-decoration: none;
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
-    font-size: 27px;
+    font-size: 20px;
+ 
     
 }
 
 .topnav a:hover {
     background-color: 18347E;
-    color: #b60a0a;
+    color: #ED2230;
 }
-/* img{
-  max-width: 10;
- 
-} */
+/* התמונה בנוובר */
+yimg{
+
+  position: absolute;
+  width: 213px;
+  height: 181px;
+  left: 12px;
+  top: 9px;
+  
+  /* background: url(imagelog.png); */
+}
 
