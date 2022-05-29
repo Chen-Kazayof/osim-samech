@@ -10,7 +10,7 @@ export const Gallery = () => {
            <h1>גלריה</h1>
            <h2>משמחים חולים</h2>
             <Box sx={{ width:'100%', height:'100%'}}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+            <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataHappy.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
@@ -25,7 +25,7 @@ export const Gallery = () => {
             </Box>
            <h2>חלוקת אוכל לחולים</h2>
             <Box sx={{ width:'100%', height:'100%'}}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+            <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataFood.map((item) => (
                 <ImageListItem   key={item.img}>
                     <img
@@ -40,7 +40,7 @@ export const Gallery = () => {
             </Box>
             <h2>שולחנות השבת שלנו</h2>
             <Box sx={{ width:'100%', height:'100%'}}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+            <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataShbbat.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
@@ -56,7 +56,7 @@ export const Gallery = () => {
 
             <h2>קורונות השמחה</h2>
             <Box sx={{ width:'100%', height:'100%'}}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+            <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataHappy2.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
@@ -72,7 +72,7 @@ export const Gallery = () => {
 
             <h2>חוגגים ליל הסדר בשערי צדק</h2>
             <Box sx={{ width:'100%', height:'100%'}}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+            <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataPesach.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
@@ -90,10 +90,17 @@ export const Gallery = () => {
      
   );
 }
+
+
+
+
+
+
 const itemDataHappy = [
     {
       img: '/image2.jpg',
       title: '2',
+     
     },
     {
       img: '/image3.jpg',
@@ -106,6 +113,7 @@ const itemDataHappy = [
     {
       img: '/image13.jpg',
       title: '13',
+      
     },
     {
       img: '/image14.jpg',
@@ -114,6 +122,7 @@ const itemDataHappy = [
     {
       img: '/image15.jpg',
       title: '15',
+      
     },
     {
       img: '/image16.jpg',
@@ -126,14 +135,15 @@ const itemDataHappy = [
     {
       img: '/image25.jpg',
       title: '25',
+      
     },
     
   ];
   
 const itemDataFood = [
   {
-    img: '/image8.jpg',
-    title: '8',
+    img: '/image24.jpg',
+    title: '24',
   },
   {
     img: '/image10.jpg',
@@ -148,8 +158,8 @@ const itemDataFood = [
     title: '21',
   },
   {
-    img: '/image24.jpg',
-    title: '24',
+    img: '/image8.jpg',
+    title: '8',
   },
   
 ];
