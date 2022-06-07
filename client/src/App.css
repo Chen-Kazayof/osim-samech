@@ -7,7 +7,6 @@
 .App {
   text-align: center;
  
- 
 }
 
 
@@ -102,7 +101,7 @@ yimg{
   
 
 }
-.underLine{
+/* .underLine{
 
   position: absolute;
   width: 100%;
@@ -111,4 +110,4 @@ yimg{
   height: 10%;
   background: #0C193D;
   
-}
+} */
