@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
 
-.inacspt2{
+.inacspt2 {
   position: absolute;
   width: 644px;
   height: 45px;
@@ -15,10 +15,11 @@
   line-height: 45px;
   /* identical to box height */
   color: #18347E;
-  
+
 
 }
-.cancelbtn{
+
+.cancelbtn {
   position: absolute;
   width: 174px;
   height: 70px;
@@ -29,26 +30,27 @@
   background: #18347E;
   border-radius: 34px;
 }
-/* p{
-    font-family: 'Heebo';
-  font-size: large;
-  
 
-}  */
- img {
+img {
 
   max-width: 100%;
-  /* height: auto;
-  width: auto\9; */
-  /* ie8 */
+
 }
+
 .column {
-  float:right;
-  
-  width: 30%;
+  float: right;
+
+  width: 33%;
   /* padding: 20px; */
 }
 
+.row {
+  /* display: block; */
+  width: 69%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 /* Clearfix (clear floats) */
 .row::after {
@@ -58,21 +60,21 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.5%;
-  margin :auto;
-  /* justify-content: center; */
+  padding: 5%;
+  margin: auto;
 }
 
 .flip-box {
   /* background-color: transparent; */
   width: 300px;
-  height: 300px; 
+  height: 300px;
   /* padding: 0%; */
   /* border: 1px solid #f1f1f1; */
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
 }
 
-  /* This container is needed to position the front and back side */
+/* This container is needed to position the front and back side */
 .flip-box-inner {
   position: relative;
   width: 100%;
@@ -88,13 +90,16 @@
 }
 
 /* Position the front and back side */
-.flip-box-front, .flip-box-back {
+.flip-box-front,
+.flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
+
 /* Style the front side (fallback if image is missing) */
 /* .flip-box-front {
   background-color: #bbb;
@@ -102,32 +107,165 @@
 } */
 /* Style the back side */
 .flip-box-back {
-  /* background-color: rgb(51, 58, 66); */
-  /* color: white; */
+
   transform: rotateY(180deg);
 }
+
 /* זה המילה העשיה שלנו */
-.ywedo{
- 
-  /* position: absolute; */
-font-family: 'Heebo';
-/* font-style: normal; */
-font-weight: 700;
-font-size: 24px;
-line-height: 35px;
-color: #F30000;
-text-align: center;
-padding: 3%;
-padding: 1%;
+.ywedo {
+
+  font-family: 'Heebo';
+  font-weight: 700;
+  font-size: 2pc;
+  line-height: 8pc;
+  /* top: 200%; */
+  color: #F30000;
+  text-align: center;
 }
+
 /* למרכז שלוש תמונות אחד ליד השני */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 
-/* .yimage{
-  position:relative;
-  
+.yimage {
+  position: absolute;
+  width: 1672.9px;
+  height: 496.83px;
+  left: -144px;
+  top: 547px;
+
+
 }
-.yimagetop{
+
+/*.yimagetop{
   position:absolute;
 
+} */
+/* .yrow{
+  position:relative;
+
+} */
+/* זה הקישקוש הירוק */
+.yhomeloge {
+  position: absolute;
+  width: 1459.58px;
+  height: 274.5px;
+  left: -2.88px;
+  top: 215%;
+
+  transform: rotate(2.53deg);
+
+}
+
+/* זה הכפתור לעבור לשולחן שבת */
+.yshabut {
+  text-align: center;
+
+  /* color: #ED2230; */
+  position: absolute;
+  width: 15%;
+  height: 10%;
+  left: 42%;
+  background: #ED2230;
+  border: 1px solid #ED2230;
+  border-radius: 11px;
+  top: 250%;
+}
+
+
+/* זה הסרגל כלים עם המספרים שעולים ויורדים */
+.y_navber_num{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 280%;
+  height: 20%;
+  background: #0C193D;
+}
+/* הכתב על הסרגל כלים  */
+.y_word{
+  top: 290%;
+  font-family: 'Heebo';
+font-style: normal;
+font-weight: 500;
+font-size: 31px;
+line-height: 46px;
+/* identical to box height */
+
+
+color: #FA4D6C;
+
+}
+/* הפעילות שלנו */
+.y_about{
+  position: absolute;
+  width: 263px;
+  height: 59px;
+  left: 596px;
+  top:310% ;
+  
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 59px;
+  /* identical to box height */
+  
+  
+  color: #223A78;
+  
+}
+
+
+/* כל זה ללואה של התמונות */
+.y_img_loop{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: .5rem;
+}
+/* IMAGE */
+.image-container {
+ 
+  overflow-x: hidden;
+  max-width: 100%;
+}
+.image-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+  grid-gap: 1.5rem;
+  position: relative;
+  left: 0;
+  transition: .3s;
+}
+.image-wrapper > * {
+  aspect-ratio: 4 / 3;
+}
+.y_img_loop_index{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+/* width: 408px;
+height: 620px;
+left: 1028px; */
+/* top: 2921px; */
+  top: 330%;
+}
+/* זה הפס הכחול בתחתית העמוד  */
+.y_under_Line {
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 380%;
+  height: 30%;
+  background: #0C193D;
+
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 } */

@@ -1,13 +1,21 @@
-mstaet{
-    color: rgba(0, 0, 0, .5);
+/* w{
+    background-color: orange;
+    margin-right: 300px;
+text-align: center;
 }
-/* h1
+#a a{
+    text-align: right;
+    font-size: medium;
+
+} */
+
+.m_h1
 {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(28, 13, 56);
+    color: rgb(88, 19, 216);
 }
-div{
+.m_div{
     display: flex;
     margin-right: 300px;
 }
@@ -17,17 +25,17 @@ div{
     margin-right: 300px;
     text-align: center;
 }
-img{
+.m_img{
     margin-left:15px;
     
 }
-.class{
+.m_class{
     background-color: orchid;
 }
 #con{
     flex-direction: column;
 }
-.w{
+.m_w{
     text-decoration: aliceblue;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: rgb(89, 45, 170);
@@ -35,16 +43,12 @@ font-size: large;
 font-weight: bold ;
 
 }
-h2{
+.m_h2{
     color: rgb(88, 19, 216);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-h4{
+.m_h4{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-} */
-
-/* a{
-    width: 180px;
-} */
+}
