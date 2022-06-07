@@ -10,6 +10,8 @@ import { About } from './components/About';
 import { OurActive } from './components/OurActive';
 import { Donations } from './components/Donations';
 import { Volonteere } from './components/Volonteere';
+// import { Activities } from './components/Activities';
+
 
 
 
@@ -28,7 +30,9 @@ function App() {
           <Route path='/About' element={<About/>}/>
           <Route path='/Donations' element={<Donations/>}/>
           <Route path='/Volonteere' element={<Volonteere/>}/>
-          <Route path='/AboutUs' element={<AboutUs/>} />
+          {/* <Route path='/AboutUs' element={<AboutUs/>} /> */}
+          {/* <Route path='/Activities' element={<Activities/>} /> */}
+
           
         </Routes>
       </BrowserRouter>
