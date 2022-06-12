@@ -35,10 +35,10 @@ export const Donations = (props) => {
 
 
       <div className="imageDonation">
-        <img className="imgDonation1" src="imgDonation.png" alt="not"/>
+        <img className="imgDonation1" src="yaeloria.png" alt="not"/>
         <img className="imgDonation2" src="imgBank.png" alt="not"/>
-        <img className="imgDonation3" src="imgDonation.png" alt="not"/>
-        <img className="imgDonation4" src="imgDonation.png" alt="not"/>
+        <img className="imgDonation3" src="yaeloria.png" alt="not"/>
+        <img className="imgDonation4" src="yaeloria.png" alt="not"/>
       </div>
 
       <div>

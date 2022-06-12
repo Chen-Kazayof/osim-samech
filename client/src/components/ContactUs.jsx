@@ -11,20 +11,20 @@ export const ContactUs = () => {
 
                 <div id="home m_div">
 
-                    <a class="m_w" href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ">youtube</a>
+                    <a target="_blank" class="m_w" href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ">youtube</a>
 
                     <img src="https://files.geektime.co.il/wp-content/uploads/2018/03/Screen-Shot-2018-03-03-at-19.03.41-1520096598.png" weight="35" width="35" />
                 </div>
 
                 <div className="m_div">
 
-                    <a class="m_w m_div" href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=">instegram</a>
+                    <a target="_blank" class="m_w m_div" href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=">instegram</a>
 
                     <img src="https://ok1.co.il/wp-content/uploads/2018/08/instagram-1675670_640.jpg" weight="30"
                         width="30" />
                 </div>
                 <div className="m_div">
-                    <a class="m_w" href="https://www.facebook.com/dvd4756/">facebook</a>
+                    <a target="_blank" class="m_w" href="https://www.facebook.com/dvd4756/">facebook</a>
                     <img src="https://shtik.co.il/wp-content/uploads/2017/02/Facebook_icon_2013.svg_-768x768.png" weight="10" width="22" />
 
                 </div>

@@ -9,7 +9,7 @@ export const Volonteere = () => {
 
     return (
         <div>
-        <h1>???מעוניינים להתנדב</h1> 
+        {/* <h1>???מעוניינים להתנדב</h1> 
         <h2>נא מלאו את טופס ההצטרפות ונחזור אליכם בהקדם</h2>
         <div>שם פרטי ושם משפחה</div>
         <TextField id="outlined-basic" label="" variant="outlined" />
@@ -32,7 +32,7 @@ export const Volonteere = () => {
           rows={4}
           variant="outlined"
           defaultValue="הייתי שמח להתנדב במחלקת..."
-        />
+        /> */}
         </div>
     )
 }

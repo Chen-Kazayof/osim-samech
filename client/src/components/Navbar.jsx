@@ -11,7 +11,6 @@ export const NavBar = () => {
             <Link to="/Gallery"><a>גלריה</a> </Link>
             <Link to ="/OurActive"><a>הפעילות שלנו</a> </Link>
             <Link to="/shabbat_meat"><a>רישום לשבת</a> </Link>
-
             <Link to="/Donations"><a>תרומות</a> </Link>
             <Link to="/Volonteere"><a>התנדבות</a> </Link>
             <Link to ="/AboutUs"><a>צור קשר</a></Link>
