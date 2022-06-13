@@ -13,7 +13,7 @@ export const NavBar = () => {
             <Link to="/shabbat_meat"><a>רישום לשבת</a> </Link>
             <Link to="/Donations"><a>תרומות</a> </Link>
             <Link to="/Volonteere"><a>התנדבות</a> </Link>
-            <Link to ="/AboutUs"><a>צור קשר</a></Link>
+            <Link to ="/ContactUs"><a>צור קשר</a></Link>
             <img src="/imagelog.png" alt="Logo image" />
 
             </div>

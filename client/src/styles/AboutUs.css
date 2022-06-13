@@ -10,10 +10,17 @@ h1{
 .shabos
 {
     /* text-align: right; */
-    margin-right: 40px;
+    /* margin-right: 40px;
     font-size: 25px;
    line-height: 1.4;
-    direction: rtl;
+    direction: rtl; */
+        padding: 50px;
+        background-color: #fffefe;
+        margin: auto;
+        width: 50%;
+        font-size: 25px;
+        text-align: right;
+      
 }
 .sub
 {

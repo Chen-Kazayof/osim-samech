@@ -1,7 +1,10 @@
+// import { Icon } from "@material-ui/core";
+import { Icon } from '@iconify/react'
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react"
 import CountUp from 'react-countup';
+
 import "../styles/homePage.css"
 
 const IMAGES = ["/image3.jpg", "/image30.jpg", "/image3.jpg"]
@@ -129,8 +132,8 @@ export const HomePage = () => {
                                 <img src="image13.jpg" alt="Paris" />
                             </div>
                             <div class="flip-box-back">
-                                <h2>Paris</h2>
-                                <p>What an amazing city</p>
+                                <h2>לכתוב משו</h2>
+                                <p>להוסיף תמונה  שמתאימה</p>
                             </div>
                         </div>
                     </div>
@@ -164,8 +167,8 @@ export const HomePage = () => {
                                 <img src="image1.jpg" alt="Paris" />
                             </div>
                             <div class="flip-box-back">
-                                <h2>Paris</h2>
-                                <p>What an amazing city</p>
+                                <h2>לכתוב משו</h2>
+                                <p>להוסיף תמונה  שמתאימה</p>
                             </div>
                         </div>
                     </div>
@@ -178,8 +181,8 @@ export const HomePage = () => {
                                 <img src="image1.jpg" alt="Paris" />
                             </div>
                             <div class="flip-box-back">
-                                <h2>Paris</h2>
-                                <p>What an amazing city</p>
+                                <h2>לכתוב משו</h2>
+                                <p>להוסיף תמונה  שמתאימה</p>
                             </div>
                         </div>
                     </div>
@@ -193,8 +196,8 @@ export const HomePage = () => {
                                 <img src="image1.jpg" alt="Paris" />
                             </div>
                             <div class="flip-box-back">
-                                <h2>Paris</h2>
-                                <p>What an amazing city</p>
+                                <h2>לכתוב משו</h2>
+                                <p>להוסיף תמונה  שמתאימה</p>
                             </div>
                         </div>
                     </div>
@@ -203,10 +206,6 @@ export const HomePage = () => {
             </div>
 
             <div>
-                {/* <Link to="/AboutUs"><a class="yshabut">שולחן שבת</a> </Link> */}
-
-                {/* <button class="yshabut">רישום לסעודות שבת</button> */}
-
             </div>
 
             <div className="y_navber_num">
@@ -220,8 +219,8 @@ export const HomePage = () => {
                 <div >
                     < CountUp className="y_nav_num" end={2400} duration={5} />
                     < CountUp className="y_nav_num" end={365} duration={5} />
-                    < CountUp className="y_nav_num" end={850} duration={5} />
-                    < CountUp className="y_nav_num" end={13} duration={5} />
+                    < CountUp className="y_nav_num" end={1500} duration={5} />
+                    < CountUp className="y_nav_num" end={7} duration={5} />
 
                 </div>
 
@@ -247,7 +246,16 @@ export const HomePage = () => {
                 </div>
             </div>
             {/* זה הפס בסוף העמוד  */}
-            <div className="y_under_Line "></div>
+            <div className="y_under_Line ">
+
+                <br/> <br/> <br/>
+           <a href="https://www.facebook.com/dvd4756/" className="icon_size" ><Icon icon="bi:facebook"     color ="#ED2230" width="34" height="34"  /></a>
+            <a href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=/" className="icon_size"><Icon icon="akar-icons:instagram-fill"  color ="#ED2230" width="34" height="34"/></a>
+            <a href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ" class="icon_size"><Icon icon="akar-icons:youtube-fill"  color ="#ED2230" width="34" height="34" /></a>
+            <br/> <br/> <br/>
+
+
+            </div>
 
         </div>
 

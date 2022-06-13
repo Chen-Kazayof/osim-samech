@@ -1,54 +1,52 @@
-/* w{
-    background-color: orange;
-    margin-right: 300px;
-text-align: center;
-}
-#a a{
-    text-align: right;
-    font-size: medium;
 
-} */
+.m_h1{
+    font-family: 'Heebo';
+font-style: normal;
+font-size: 2pc;
+line-height: 71px;
+color: #213A78;
+}
 
-.m_h1
-{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(88, 19, 216);
+.m_pink_h2{
+    font-family: 'Heebo';
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 1.7pc;
+    line-height: 71px;
+    color: #ED2230;
+  
 }
-.m_div{
-    display: flex;
-    margin-right: 300px;
-}
-#flex1{
-    flex-direction: row;
-    background-color: rgb(133, 105, 231);
-    margin-right: 300px;
-    text-align: center;
-}
-.m_img{
-    margin-left:15px;
-    
-}
-.m_class{
-    background-color: orchid;
-}
-#con{
-    flex-direction: column;
-}
-.m_w{
-    text-decoration: aliceblue;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: rgb(89, 45, 170);
-font-size: large;
-font-weight: bold ;
 
-}
-.m_h2{
-    color: rgb(88, 19, 216);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-}
 .m_h4{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
+     
+    font-family: 'Heebo';
+    font-style: normal;
+    font-size: 1.4pc;
+    /* line-height: 44px; */
+    color: #223A78;
 }
+.size_of_img{
+    width: 479.41px;
+
+}
+.icon_size{
+    width: 51px;
+    height: 51px;
+}
+.y_under_Line_contact{
+    position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 150%;
+  height: 15%;
+  background: #0C193D;
+}
+
+
+
+
+
+
+
+
+
