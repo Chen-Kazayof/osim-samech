@@ -1,0 +1,130 @@
+
+.backVol{
+    background-image:url("/public/vol.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 35pc;
+}
+.formVol{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    color: #223A78;
+    width: fit-content;
+    margin-left: auto;
+}
+.titleH1Vol{
+    margin-top: -25pc;
+    margin-right: 7pc;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 71px;
+    text-align: right;
+    color: #213A78;
+}
+.title2H1Vol{
+    margin-right: 7pc;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 71px;
+    text-align: right;
+    color: #213A78;
+}
+.titleH3Vol{
+    margin-right: 7pc;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 71px;
+    text-align: right;
+    color: #213A78;
+}
+.titleDivVol{
+    margin-top: 12pc;
+    margin-right: 10pc;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: right;
+    color: #223A78;
+}
+.textVol{
+    margin-top: 0.5pc;
+    margin-bottom: 0.5pc;
+    margin-right: 9.7pc;
+    box-sizing: border-box;
+    direction: rtl;
+    border: 2px solid #ED2230;
+    border-radius: 0.3pc;
+    height: 4pc;
+    width: 17pc;
+    color: #223A78;
+    background: transparent;
+}
+::placeholder {
+    color: #223A78;
+    opacity: 1; /* Firefox */
+  }
+.btnVol{
+    margin-right: 50pc;
+    margin-top: 10pc;
+    margin-bottom: 10pc;
+    font-family: 'Heebo';
+    font-size: 1pc;
+    height: 3pc;
+    width: 7pc;
+    color: #FFFFFF;
+    background: #ED2230;
+    border: 1px solid #ED2230;
+    border-radius: 11px;
+}
+.selectVol{
+    
+    margin-top: 0.5pc;
+    margin-bottom: 0.5pc;
+    margin-right: 9.7pc;
+    height: 4pc;
+    width: 17pc;
+    border: 2px solid #ED2230;
+    border-radius: 4px;
+    background: transparent;
+    color: #223A78;
+}
+
+.textVol1{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: right;
+
+    color: #223A78;
+}
+.dayVol{
+    margin-top: 12px;
+    height: 55px;
+    width: 250px;
+    border: 2px solid #ED2230;
+    border-radius: 4px;
+    background: transparent;
+
+}
+.underLineVol {
+    height: 8pc;
+    background: #0C193D;
+  
+  }

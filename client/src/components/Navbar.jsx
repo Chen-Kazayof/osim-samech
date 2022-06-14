@@ -15,6 +15,7 @@ export const NavBar = () => {
             <Link to="/Volonteere"><a>התנדבות</a> </Link>
             <Link to ="/AboutUs"><a>צור קשר</a></Link>
             <img src="/imagelog.png" alt="Logo image" />
+            {/* <div className="underLine"></div> */}
 
             </div>
 

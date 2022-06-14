@@ -29,3 +29,21 @@
 .galleryTable{
     width: 100%;
 }
+.imgGallery{
+    border-radius: 1pc;
+}
+.titleGallery{
+    margin-right: 50pc;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: right;
+    color: #ED2230;
+}
+.underLineGallery{
+    height: 8pc;
+    background: #0C193D;
+  
+}

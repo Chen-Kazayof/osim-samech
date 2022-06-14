@@ -3,17 +3,17 @@ import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { padding } from '@mui/system';
-
+import "../styles/Gallery.css"
 export const Gallery = () => {
   return (
       <div>
-           <h1>גלריה</h1>
-           <h2>משמחים חולים</h2>
-            <Box sx={{ width:'100%', height:'100%'}}>
+           <h2 className='titleGallery'>משמחים חולים</h2>
+             <Box sx={{ width:'50%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataHappy.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
+                    style={{height:'15pc',width:'20pc',borderRadius:'0.3pc'}}
                     src={`${item.img}?w=248&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
@@ -22,13 +22,14 @@ export const Gallery = () => {
                 </ImageListItem>
                 ))}
             </ImageList>
-            </Box>
-           <h2>חלוקת אוכל לחולים</h2>
-            <Box sx={{ width:'100%', height:'100%'}}>
+            </Box> 
+           <h2 className='titleGallery'>חלוקת אוכל לחולים</h2>
+            <Box sx={{width:'50%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataFood.map((item) => (
                 <ImageListItem   key={item.img}>
                     <img
+                    style={{height:'15pc',width:'20pc',borderRadius:'0.3pc'}}
                     src={`${item.img}?w=248&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
@@ -38,12 +39,13 @@ export const Gallery = () => {
                 ))}
             </ImageList>
             </Box>
-            <h2>שולחנות השבת שלנו</h2>
-            <Box sx={{ width:'100%', height:'100%'}}>
+            <h2 className='titleGallery'>שולחנות השבת שלנו</h2>
+            <Box sx={{ width:'50%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataShbbat.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
+                    style={{height:'15pc',width:'20pc',borderRadius:'0.3pc'}}
                     src={`${item.img}?w=248&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
@@ -54,12 +56,13 @@ export const Gallery = () => {
             </ImageList>
             </Box>
 
-            <h2>קורונות השמחה</h2>
-            <Box sx={{ width:'100%', height:'100%'}}>
+            <h2 className='titleGallery'>קורונות השמחה</h2>
+            <Box sx={{ width:'50%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataHappy2.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
+                    style={{height:'15pc',width:'20pc',borderRadius:'0.3pc'}}
                     src={`${item.img}?w=248&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
@@ -70,12 +73,13 @@ export const Gallery = () => {
             </ImageList>
             </Box>
 
-            <h2>חוגגים ליל הסדר בשערי צדק</h2>
-            <Box sx={{ width:'100%', height:'100%'}}>
+            <h2 className='titleGallery'>חוגגים ליל הסדר</h2>
+            <Box sx={{ width:'50%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataPesach.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
+                    style={{height:'15pc',width:'20pc',borderRadius:'0.3pc'}}
                     src={`${item.img}?w=248&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
@@ -85,7 +89,7 @@ export const Gallery = () => {
                 ))}
             </ImageList>
             </Box>
-           
+            <div className="underLineGallery "></div>
       </div>
      
   );
