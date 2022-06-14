@@ -7,51 +7,47 @@ import CountUp from 'react-countup';
 
 import "../styles/homePage.css"
 
-const IMAGES = ["/image3.jpg", "/image30.jpg", "/image3.jpg"]
+const IMAGES = ["/image3.jpg", "/image30.jpg", "/image15.jpg"]
+const IMAGES2 = ["/image3.jpg", "/image30.jpg", "/image15.jpg"]
 
 export const HomePage = () => {
 
     const [index, setIndex] = useState(0);
+    const [loopImages, setLoopImages] = useState([...IMAGES2]);
 
     const interval = useRef(null);
 
     useEffect(() => {
-        interval.current = setInterval(displayNextImage, 3000);
+        interval.current = setInterval(handleInterval, 3000);
         return () => clearInterval(interval.current)
     }, [])
+
+    const handleInterval = () => {
+        displayNextImage();
+        // switchImages();
+    }
 
     const displayNextImage = () => {
         setIndex(index => (index === IMAGES.length - 1) ? 0 : index + 1);
     }
 
+    const switchImages = () => {
+        setLoopImages(prev => {
+            console.log(prev)
+            for (let index = 0; index <prev.length -1;index++) {
+                if(index==0){
+                    prev[index]=prev[prev.length-1];
+                }
+                else{
+                    prev[index]=prev[index+1];
+                }
+            }
+            return [...prev] ;
+        })
+       
+    }
 
-    const imageWrapper = document.querySelector('.image-wrapper')
-    const imageItems = document.querySelectorAll('.image-wrapper > *')
-    const imageLength = imageItems.length
-    const perView = 4
-    let totalScroll = 0
-    const delay = 2000
 
-    // imageWrapper.style.setProperty('--per-view', perView)
-    // for (let i = 0; i < perView; i++) {
-    //     imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
-    // }
-
-    // let autoScroll = setInterval(scrolling, delay)
-
-    // function scrolling() {
-    //     totalScroll++
-    //     if (totalScroll == imageLength + 1) {
-    //         clearInterval(autoScroll)
-    //         totalScroll = 1
-    //         imageWrapper.style.transition = '0s'
-    //         imageWrapper.style.left = '0'
-    //         autoScroll = setInterval(scrolling, delay)
-    //     }
-    //     const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
-    //     imageWrapper.style.left = `-${totalScroll * widthEl}px`
-    //     imageWrapper.style.transition = '.3s'
-    // }
     return (
 
         <div>
@@ -72,150 +68,150 @@ export const HomePage = () => {
 
             </div>
             <div className="y_all_center_img">
-            {/* שורה ראשונה */}
-            
-            <div className="row">
-                {/* תמונה ראשונה  */}
-                <div className="column">
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image1.jpg" alt="Paris" />
-                            </div>
-                            <div className="flip-box-back">
-                                <h2>שולחנות שבת</h2>
-                                <p>שולחנות שבת בשערי צדק</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* תמונה שניה */}
-                <div className="column">
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image13.jpg" alt="Paris" />
-                            </div>
-                            <div className="flip-box-back">
-                                <h2>משמחים</h2>
-                                <p>המתנדבים שלנו פה כדי לשמח אתכם</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="column">
-                    {/* תמונה שלישית */}
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image20.jpg" alt="Paris" />
-                            </div>
-                            <div className="flip-box-back">
-                                <h2>עגלות שמחה</h2>
-                                <p>העגלות שלנו באים לשמח מבוגרים</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                {/* שורה ראשונה */}
 
-
-
-            {/* שורה שניה */}
-            <div className="row">
-                <div className="column">
+                <div className="row">
                     {/* תמונה ראשונה  */}
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image19.jpg" alt="Paris" />
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image1.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>שולחנות שבת</h2>
+                                    <p>שולחנות שבת בשערי צדק</p>
+                                </div>
                             </div>
-                            <div className="flip-box-back">
-                                <h2>שולחנות שבת</h2>
-                                <p>השולחנות שלנו באים להעניק לכם את הטוב ביותר</p>
+                        </div>
+                    </div>
+                    {/* תמונה שניה */}
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image13.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>משמחים</h2>
+                                    <p>המתנדבים שלנו פה כדי לשמח אתכם</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="column">
+                        {/* תמונה שלישית */}
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image20.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>עגלות שמחה</h2>
+                                    <p>העגלות שלנו באים לשמח מבוגרים</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* תמונה שניה */}
-                <div className="column">
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image13.jpg" alt="Paris" />
-                            </div>
-                            <div className="flip-box-back">
-                                <h2>לכתוב משו</h2>
-                                <p>להוסיף תמונה  שמתאימה</p>
-                            </div>
-                        </div>
-                    </div>
 
+
+
+                {/* שורה שניה */}
+                <div className="row">
+                    <div className="column">
+                        {/* תמונה ראשונה  */}
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image19.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>שולחנות שבת</h2>
+                                    <p>השולחנות שלנו באים להעניק לכם את הטוב ביותר</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* תמונה שניה */}
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image13.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>לכתוב משו</h2>
+                                    <p>להוסיף תמונה  שמתאימה</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="column">
+                        {/* תמונה שלישית */}
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image4.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>אוכל לשבת</h2>
+                                    <p>אנחנו תמיד פה להעניק לכם את האוכל הכי טוב כדי שתחוו את השבת בשמחה </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="column">
+
+
+                {/* שורה שלישית */}
+                <div className="row">
+                    <div className="column">
+                        {/* תמונה ראשונה  */}
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image1.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>לכתוב משו</h2>
+                                    <p>להוסיף תמונה  שמתאימה</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* תמונה שניה */}
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image1.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>לכתוב משו</h2>
+                                    <p>להוסיף תמונה  שמתאימה</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     {/* תמונה שלישית */}
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image4.jpg" alt="Paris" />
-                            </div>
-                            <div className="flip-box-back">
-                                <h2>אוכל לשבת</h2>
-                                <p>אנחנו תמיד פה להעניק לכם את האוכל הכי טוב כדי שתחוו את השבת בשמחה </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            {/* שורה שלישית */}
-            <div className="row">
-                <div className="column">
-                    {/* תמונה ראשונה  */}
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image1.jpg" alt="Paris" />
-                            </div>
-                            <div className="flip-box-back">
-                                <h2>לכתוב משו</h2>
-                                <p>להוסיף תמונה  שמתאימה</p>
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image1.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>לכתוב משו</h2>
+                                    <p>להוסיף תמונה  שמתאימה</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* תמונה שניה */}
-                <div className="column">
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image1.jpg" alt="Paris" />
-                            </div>
-                            <div className="flip-box-back">
-                                <h2>לכתוב משו</h2>
-                                <p>להוסיף תמונה  שמתאימה</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                {/* תמונה שלישית */}
-                <div className="column">
-                    <div className="flip-box">
-                        <div className="flip-box-inner">
-                            <div className="flip-box-front">
-                                <img src="image1.jpg" alt="Paris" />
-                            </div>
-                            <div className="flip-box-back">
-                                <h2>לכתוב משו</h2>
-                                <p>להוסיף תמונה  שמתאימה</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img className="yhomeloge" src="yhomeloge.png"></img>
+                <img className="yhomeloge" src="yhomeloge.png"></img>
 
             </div>
 
@@ -243,16 +239,11 @@ export const HomePage = () => {
             <div className="y_img_loop_index">
                 <div class="image-container ">
                     <div class="image-wrapper">
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" /> </div>
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" />  </div>
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" />   </div>
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" /> </div>
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" />   </div>
+                        {loopImages.map((src) => (
+                            <div key={src} className=" y_img_loop">
+                                <img src={src}  />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
