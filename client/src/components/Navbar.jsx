@@ -9,7 +9,7 @@ export const NavBar = () => {
             <Link to="/"><a id="homePage">דף הבית  </a>  </Link>
             <Link to ="/About"><a>אודות</a> </Link>
             <Link to="/Gallery"><a>גלריה</a> </Link>
-            <Link to ="/OurActive"><a>הפעילות שלנו</a> </Link>
+            <Link to ="/Activities"><a>הפעילות שלנו</a> </Link>
             <Link to="/shabbat_meat"><a>רישום לשבת</a> </Link>
             <Link to="/Donations"><a>תרומות</a> </Link>
             <Link to="/Volonteere"><a>התנדבות</a> </Link>

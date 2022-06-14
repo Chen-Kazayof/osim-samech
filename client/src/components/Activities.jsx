@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Activities.css"
 
-export const Donations = (props) => {
+export const Activities = (props) => {
 
 
     // useEffect(() => {
@@ -10,6 +10,7 @@ export const Donations = (props) => {
 
     return (
         <div>
+            njkmnjmk
             <div class="column">
                 <div class="card">
                     <h3>Card 3</h3>
