@@ -30,32 +30,32 @@ export const Volonteere = () => {
           <input type="text" className="textVol" name="flname" placeholder="שם פרטי ושם משפחה"></input>
           <select name="age" id="age" className="selectVol">
             <option value="" disabled selected>גיל</option>
-            <option value="15">15-18</option>
-            <option value="18">18-20</option>
-            <option value="20">20-25</option>
-            <option value="25">25+</option>
+            <option value="15-18">15-18</option>
+            <option value="18-20">18-20</option>
+            <option value="20-25">20-25</option>
+            <option value="25+">25+</option>
           </select>
           <select name="place" id="place" className="selectVol">
             <option value="" disabled selected>אזור מגורים</option>
-            <option value="center">מרכז</option>
-            <option value="north">צפון</option>
-            <option value="South">דרום</option>
-            <option value="jerusalem">ירושלים</option>
+            <option value="מרכז">מרכז</option>
+            <option value="צפון">צפון</option>
+            <option value="דרום">דרום</option>
+            <option value="ירושלים">ירושלים</option>
           </select>
           <input type="text" className="textVol" name="phone" placeholder="טלפון ליצירת קשר"></input>
           <input type="text" className="textVol" name="email" placeholder='דוא"ל'></input>
           <select name="hospital" id="hospital" className="selectVol">
             <option value="" disabled selected>בית חולים</option>
-            <option value="shaariZedek">שערי צדק</option>
-            <option value="hadasa">הדסה הר הצופים</option>
-            <option value="telHashomer">תל השומר</option>
+            <option value="שערי צדק">שערי צדק</option>
+            <option value="הדסה הר הצופים">הדסה הר הצופים</option>
+            <option value="תל השומר">תל השומר</option>
           </select>
           <select name="Volunteering" id="Volunteering" className="selectVol">
             <option value="" disabled selected>תחום התנדבות</option>
-            <option value="a">א</option>
-            <option value="b">ב</option>
-            <option value="c">ג</option>
-            <option value="d">ד</option>
+            <option value="א">א</option>
+            <option value="ב">ב</option>
+            <option value="ג">ג</option>
+            <option value="ד">ד</option>
           </select>
 
 
