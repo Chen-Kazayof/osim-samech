@@ -6,8 +6,8 @@ import { padding } from '@mui/system';
 import "../styles/Gallery.css"
 export const Gallery = () => {
   return (
-      <div>
-            <div className='backgallery1'>
+      <div >
+            <div className='backgallery1' >
               
            <h2 className='titleGallery'>משמחים חולים</h2>
              <Box sx={{ width:'70%', height:'100%', margin: 'auto'}}>
@@ -15,7 +15,7 @@ export const Gallery = () => {
                 {itemDataHappy.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
-                    style={{height:'15pc',width:'20pc',borderRadius:'0.3pc'}}
+                    style={{height:'15pc',width:'20pc',borderRadius:'0.3pc',marginLeft:'10px'}}
                     src={`${item.img}?w=248&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
@@ -42,6 +42,7 @@ export const Gallery = () => {
             </ImageList>
             </Box>
             </div>
+            <div className='backgallery2'>
             <h2 className='titleGallery'>שולחנות השבת שלנו</h2>
             <Box sx={{ width:'70%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={4} gap={8}>
@@ -59,7 +60,7 @@ export const Gallery = () => {
             </ImageList>
             </Box>
 
-            <h2 className='titleGallery'>קורונות השמחה</h2>
+            <h2 className='titleGallery'>עגלות פינוקים</h2>
             <Box sx={{ width:'70%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataHappy2.map((item) => (
@@ -92,6 +93,7 @@ export const Gallery = () => {
                 ))}
             </ImageList>
             </Box>
+            </div>
             <div className="underLineGallery "></div>
       </div>
      

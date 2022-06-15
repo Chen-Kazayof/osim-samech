@@ -48,13 +48,18 @@
   
 }
 .backgallery1{
-    /* background-image:url("/public/vol.png");
-    filter: alpha(opacity=50);  /* IE 5-7 */
-/*     
-    -khtml-opacity: 0.5;        
-    opacity: 0.5;               
+    
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right; */
+    background-position: right; 
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.788) 80%) ,url("/public/vol.png");
+   
+}
+.backgallery2{
+    
+    background-repeat: no-repeat;
+    background-size: 300pc;
+    background-position: right; 
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.788) 80%) ,url("/public/Frame.png");
    
 }
