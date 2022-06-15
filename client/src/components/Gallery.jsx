@@ -7,8 +7,10 @@ import "../styles/Gallery.css"
 export const Gallery = () => {
   return (
       <div>
+            <div className='backgallery1'>
+              
            <h2 className='titleGallery'>משמחים חולים</h2>
-             <Box sx={{ width:'50%', height:'100%', margin: 'auto'}}>
+             <Box sx={{ width:'70%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataHappy.map((item) => (
                 <ImageListItem key={item.img}>
@@ -24,8 +26,8 @@ export const Gallery = () => {
             </ImageList>
             </Box> 
            <h2 className='titleGallery'>חלוקת אוכל לחולים</h2>
-            <Box sx={{width:'50%', height:'100%', margin: 'auto'}}>
-            <ImageList variant="standard" cols={3} gap={8}>
+            <Box sx={{width:'70%', height:'100%', margin: 'auto'}}>
+            <ImageList variant="standard" cols={5} gap={8}>
                 {itemDataFood.map((item) => (
                 <ImageListItem   key={item.img}>
                     <img
@@ -39,9 +41,10 @@ export const Gallery = () => {
                 ))}
             </ImageList>
             </Box>
+            </div>
             <h2 className='titleGallery'>שולחנות השבת שלנו</h2>
-            <Box sx={{ width:'50%', height:'100%', margin: 'auto'}}>
-            <ImageList variant="standard" cols={3} gap={8}>
+            <Box sx={{ width:'70%', height:'100%', margin: 'auto'}}>
+            <ImageList variant="standard" cols={4} gap={8}>
                 {itemDataShbbat.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
@@ -57,7 +60,7 @@ export const Gallery = () => {
             </Box>
 
             <h2 className='titleGallery'>קורונות השמחה</h2>
-            <Box sx={{ width:'50%', height:'100%', margin: 'auto'}}>
+            <Box sx={{ width:'70%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataHappy2.map((item) => (
                 <ImageListItem key={item.img}>
@@ -74,7 +77,7 @@ export const Gallery = () => {
             </Box>
 
             <h2 className='titleGallery'>חוגגים ליל הסדר</h2>
-            <Box sx={{ width:'50%', height:'100%', margin: 'auto'}}>
+            <Box sx={{ width:'70%', height:'100%', margin: 'auto'}}>
             <ImageList variant="standard" cols={3} gap={8}>
                 {itemDataPesach.map((item) => (
                 <ImageListItem key={item.img}>

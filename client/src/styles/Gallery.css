@@ -47,3 +47,14 @@
     background: #0C193D;
   
 }
+.backgallery1{
+    /* background-image:url("/public/vol.png");
+    filter: alpha(opacity=50);  /* IE 5-7 */
+/*     
+    -khtml-opacity: 0.5;        
+    opacity: 0.5;               
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right; */
+   
+}
