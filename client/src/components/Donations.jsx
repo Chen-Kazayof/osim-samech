@@ -13,7 +13,6 @@ export const Donations = (props) => {
 
   return (
     <div >
-      {/* <h1 className="title">תרומות</h1> */}
       <ul>
         <li className="sec_title">שמחה</li>
       </ul>
@@ -27,18 +26,18 @@ export const Donations = (props) => {
       <div className="optionDon">
         <p className="bitDon">העברה באמצעות ביט/טלפון</p>
         <p className="bankDon">העברה בנקאית</p>
-        <p className="cardDon">העברה באשראי</p>
-        <p className="kevaDon">העברה בהוראת קבע</p>
+        <p className="cardDon">תרומה באשראי</p>
+        <p className="kevaDon">הוראת קבע</p>
       </div>
 
       <div></div>
 
 
       <div className="imageDonation">
-        <img className="imgDonation1" src="yaeloria.png" alt="not"/>
+        <img className="imgDonation1" src="imgDonation.png" alt="not"/>
         <img className="imgDonation2" src="imgBank.png" alt="not"/>
-        <img className="imgDonation3" src="yaeloria.png" alt="not"/>
-        <img className="imgDonation4" src="yaeloria.png" alt="not"/>
+        <img className="imgDonation3" src="imgDonation.png" alt="not"/>
+        <img className="imgDonation4" src="imgDonation.png" alt="not"/>
       </div>
 
       <div>

@@ -1,0 +1,26 @@
+.title_act{
+    font-size: 40px;
+    color:#0C193D;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Heebo';
+}
+.img_active{
+    /* height: 600px; */
+    width: 800px;
+    margin-bottom: 30px;
+}
+.under_ruler{
+    height: 10pc;
+    background: #0C193D;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+/* .img_active1{
+    height: 19pc;
+    width: 10pc;
+} */
+.img_under_ruler{
+    width: 10pc;
+}
