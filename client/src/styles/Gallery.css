@@ -29,3 +29,37 @@
 .galleryTable{
     width: 100%;
 }
+.imgGallery{
+    border-radius: 1pc;
+}
+.titleGallery{
+    margin-right: 50pc;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: right;
+    color: #ED2230;
+}
+.underLineGallery{
+    height: 8pc;
+    background: #0C193D;
+  
+}
+.backgallery1{
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right; 
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.788) 80%) ,url("/public/vol.png");
+   
+}
+.backgallery2{
+    
+    background-repeat: no-repeat;
+    background-size: 300pc;
+    background-position: right; 
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.788) 80%) ,url("/public/Frame.png");
+   
+}

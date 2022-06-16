@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import { HomePage } from './components/HomePage';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import { Gallery } from './components/Gallery';
 import { NavBar } from './components/Navbar';
-import { AboutUs } from './components/AboutUs';
+import { Mesamchim_act } from './components/Mesamchim_act';
 import { Shabbat_meat } from './components/Shabbat_meat';
 import { About } from './components/About';
 import { Submit_Shabbat } from './components/Submit_Shabbat';
@@ -12,10 +11,10 @@ import { Activities } from './components/Activities';
 import { Donations } from './components/Donations';
 import { Volonteere } from './components/Volonteere';
 import { ContactUs } from './components/ContactUs';
-
-
-
-
+import { Act_shabbat } from './components/Act_shabbat';
+import { Act_tipach } from './components/Act_tipach';
+import { Act_help } from './components/Act_help';
+import { Vol_sec } from './components/Vol_sec';
 
 function App() {
   return (
@@ -33,14 +32,14 @@ function App() {
           <Route path='/Donations' element={<Donations/>}/>
           <Route path='/Submit_Shabbat' element={<Submit_Shabbat/>}/>
           <Route path='/Volonteere' element={<Volonteere/>}/>
-          <Route path='/AboutUs' element={<AboutUs/>} />
-          {/* <Route path='/Activities' element={<Activities/>} /> */}
+          <Route path='/Mesamchim_act' element={<Mesamchim_act/>} />
+          <Route path='/Act_shabbat' element={<Act_shabbat/>} />
+          <Route path='/Act_tipach' element={<Act_tipach/>} />
+          <Route path='/Act_help' element={< Act_help/>} />
+          <Route path='/Vol_sec' element={<Vol_sec/>} />
 
-        
         </Routes>
       </BrowserRouter>
-      {/* <HomePage username="chen" />
-      <img src="/images/image1.jpg" /> */}
     </div>
     
   );

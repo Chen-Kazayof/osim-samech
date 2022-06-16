@@ -36,7 +36,7 @@ export const About = (props) => {
   return (
     <div>
       <ReadMore>
-        <p class="title_about">?איך לעשות שמח</p>
+        <p className="title_about">?איך לעשות שמח</p>
         <div className="divAbout">.זה בדיוק מה ששאלתי את עצמי כשיצאתי מחדר הניתוח להתאוששות מגובס כולי וכואב אחרי תאונת דרכים קשה</div>
         <div className="divAbout">.השקט המתוח צרם לי באוזניים. מעין ענן כבד של מחשבות ודאגות מילא את האווירה ללא מילים</div>
         <div className="divAbout">.הימים עברו בלי שום שינוי, גיוון או מישהו שיבוא ויזכיר לרגע שיש עולם אחר חוץ מאשפוזים, כאבים תרופות ובדיקות</div>
@@ -62,7 +62,7 @@ export const About = (props) => {
         <div className="divAbout">,אז אנחנו פה כדי להיות קשת בים של עננים</div>
         <div className="divAbout">,לשיר, לנגן על מיתרי הלב להיות כשכואב</div>
         <div className="divAbout">...להעלות חיוך ושמחה לעשות כיף ואווירה טובה כי</div>
-        <p class="sub_title">!באנו לעשות שמח</p>
+        <p className="sub_title">!באנו לעשות שמח</p>
       </ReadMore>
     </div>
   )

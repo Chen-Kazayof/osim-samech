@@ -1,61 +1,26 @@
 @import 'https://fonts.googleapis.com/css?family=Heebo:400,700&subset=hebrew';
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
-#bo {
-  width: 100% !important;
-}
-
-.inacspt2 {
-  position: absolute;
-  width: 644px;
-  height: 45px;
-  left: 398px;
-  top: 500px;
-  font-family: 'Heebo';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 37px;
-  line-height: 45px;
-  /* identical to box height */
-  color: #18347E;
-
-
-}
-
-.cancelbtn {
-  position: absolute;
-  width: 174px;
-  height: 70px;
-  left: 687px;
-  top: 650px;
-  margin-top: 5px;
-  border: none;
-  background: #18347E;
-  border-radius: 34px;
-}
-
+/*זה התמונות מתחלפות בהתחלה */
+.yimagetop{
+  width: 100%;
+  height: 600px;
+  }
 img {
-
   max-width: 100%;
-
 }
+/* למרכז את כל התמונות באמצע */
 .y_all_center_img{
-  /* align-items: center; */
-  /* justify-content: center; */
   max-width: 100%;
- 
  }
+ /*  זה לשים שלוש תצמונות אחד ליד השני */
 .column {
-
-  /* float:left; */
   width: 33%;
-  /* padding: 20px; */
 }
 
 .row {
  max-width: 100%;
  padding-left: 17%;
-  /* padding-right: 10pc; */
 }
 
 /* Clearfix (clear floats) */
@@ -64,15 +29,9 @@ img {
   clear: both;
   display: table;
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* padding: 2%; */
-  /* margin: auto; */
 }
 
 .flip-box {
-  /* background-color: transparent; */
-  /* padding: 5%; */
   width: 100%;
   height: 300px;
   perspective: 1000px;
@@ -96,24 +55,26 @@ img {
 /* Position the front and back side */
 .flip-box-front,
 .flip-box-back {
+  
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: visible;
+  -webkit-backface-visibility:visible;
   backface-visibility: hidden;
 }
 
 
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
-  /* background-color: #0C193D; */
-  /* padding: 3%; */
-   /* color: black; */
+  border-radius: 25px;
+
+  /* border: 8px solid white; */
 }
 
 /* Style the back side */
 .flip-box-back {
-
+  
+  color:#0C193D;
   transform: rotateY(180deg);
 }
 
@@ -127,22 +88,13 @@ img {
   color: #F30000;
   text-align: center;
 }
-
-
-.yimagetop{
-
-}
-/* .yrow{
-  position:relative;
-
-} */
 /* זה הקישקוש הירוק */
 .yhomeloge {
   position: relative;
   width: 1459.58px;
   height: 274.5px;
   left: 0;
-  top: 230%;
+  top: 220%;
   transform: rotate(2.53deg);
 }
 
@@ -170,7 +122,7 @@ img {
 
 /* זה הסרגל כלים של מספרים עולים  */
 .y_nav_num {
-  padding: 4.5%;
+  padding: 4%;
   font-family: 'Heebo';
   font-style: normal;
   font-weight: 700;
@@ -180,85 +132,26 @@ img {
 
 /* העשיה שלנו */
 .y_about {
-  /* position: absolute; */
-  /* max-width: 100%; */
-  /* width: 263px; */
-  /* height: 59px;
-  left: 596px; */
-  /* top: 310%; */
+  
   font-family: 'Heebo';
   font-style: normal;
-  font-weight: 700;
   font-size: 40px;
   text-align: center;
-  line-height: 80px;
   color: #223A78;
+  font-weight: 500; 
+  line-height: 150px; 
 
 }
-
-
-/* כל זה ללואה של התמונות */
-.y_img_loop {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* display: block; */
-  border-radius: .5rem;
-}
-
-/* IMAGE */
-.image-container {
-
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-.image-wrapper {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
-  grid-gap: 1.5rem;
-  position: relative;
-  /* left: 0; */
-  transition: .3s;
-}
-
-.image-wrapper>* {
-  aspect-ratio: 4 / 3;
-}
-
-.y_img_loop_index {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 340%;
-}
-
-.y_img_loop_index2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 320%;
-}
-
 /* זה הפס הכחול בתחתית העמוד  */
 .y_under_Line {
 
   position: absolute;
   width: 100%;
-  top: 400%;
-  height: 30%;
   background: #0C193D;
+  top:400%; 
+  height: 30%; 
 
 }
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}  */
 .slideshowDots {
   /* margin-top: 25px; */
   text-align: center;
@@ -277,3 +170,18 @@ img {
 .slideshowDot.active {
   background-color: #356D9C;
 }
+ 
+.contact_home{ 
+  /* display: flex; */ 
+  /* padding: auto; */ 
+  text-align:right; 
+ 
+  /* margin-right: 50px; */ 
+  margin-top: 5%; 
+margin-right: 5%; 
+  font-family: 'Heebo'; 
+  font-weight: 300; 
+  font-size: 1pc; 
+  color: white; 
+} 
+
