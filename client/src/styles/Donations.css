@@ -16,7 +16,7 @@ body ul:nth-child(2){
     font-size: 35px;
 }
 li{ 
-    color: rgb(6, 6, 73);
+    color: #0C193D;
     font-weight: bold;
 } 
 
@@ -26,12 +26,13 @@ li{
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
-    color: rgb(6, 6, 73);
+    color: #0C193D;
+    /* color: rgb(6, 6, 73); */
 }
 
 /* כיתוב מעל העיגולים */
 .optionDon{
-    color: rgb(6, 6, 73);
+    color:#0C193D;
     font-weight: bold;
     font-size: 18px;
 }

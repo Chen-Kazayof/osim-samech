@@ -1,6 +1,6 @@
 .title_about , .sub_title{
     font-size: 40px;
-    color:rgb(36, 36, 88);
+    color:#0C193D;
     font-weight: bold;
     text-align: center;
     font-family: 'Heebo';
@@ -16,7 +16,7 @@
 .text{
     width: 100%;
     display: inline;
-    color:rgb(36, 36, 88);
+    color:#0C193D;
     font-weight: bold;
  }
  

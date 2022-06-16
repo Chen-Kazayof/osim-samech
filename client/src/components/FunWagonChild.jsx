@@ -15,7 +15,7 @@ export const FunWagonChild = () => {
 
             <table className="img_table_child">
                 <tr className="img_row">
-                    <td><img className="imgchild1" src="child/1.png" alt="not" /></td>
+                    <th><img className="imgchild1" src="child/1.png" alt="not" /></th>
                     <td><img className="imgchild" src="child/2.png" alt="not" /></td>
                     <td><img className="imgchild" src="child/3.png" alt="not" /></td>
                     <td><img className="imgchild" src="child/4.png" alt="not" /></td>

@@ -14,7 +14,10 @@ export const OurActive = () => {
             <Link to="/"> <img className="img_active" src="active_page/img_active3.png" alt="not"/> </Link>
             <Link to="/"> <img className="img_active" src="active_page/img_active4.png" alt="not"/> </Link>
 
-            <div className="under_ruler"></div>
+            <div className="under_ruler">
+            <img className="img_under_ruler" src="active_page/דוד.png" alt="not"/>
+            </div>
+            
         </div>
     );
 }
