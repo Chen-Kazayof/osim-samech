@@ -76,7 +76,7 @@
 }
 ::placeholder {
     color: #223A78;
-    opacity: 1; /* Firefox */
+    opacity: 1;
   }
 .btnVol{
     margin-right: 50pc;

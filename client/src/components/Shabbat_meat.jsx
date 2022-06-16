@@ -1,4 +1,6 @@
 import "../styles/Shabbat_meat.css"
+import "../styles/volonteere.css"
+
 import emailjs from '@emailjs/browser'
 import { useNavigate } from 'react-router-dom';
 
@@ -28,14 +30,15 @@ export const Shabbat_meat = () => {
                 <a className="m_aa">סעודות שבת</a></div>
 
             <div className='shabos'>
-                <form onSubmit={sendEmail}>
-                    <div className="titleDivVol">טופס הצטרפות</div>
+            <div className="titleDivVol">טופס הצטרפות</div><br/>
+
+                <form onSubmit={sendEmail} className="formVol">
 
                     {/* <a className="m_invitation_meal"> הזמנת סעודות שבת</a><br /> */}
-                    <input type="text" className="textVol" name="f_name" placeholder="שם המזמין"></input><br />
-                    <input type="email" className="textVol" name="gmail_address" placeholder="כתובת מייל"></input><br />
-                    <input type="number" className="textVol" name="tel_num" placeholder="מספר טלפון"></input><br />
-                    <select name="num_of_participan" className="selectVol"><br />
+                    <input type="text" className="textVol" name="f_name" placeholder="שם המזמין"></input>
+                    <input type="email" className="textVol" name="gmail_address" placeholder="כתובת מייל"></input>
+                    <input type="number" className="textVol" name="tel_num" placeholder="מספר טלפון"></input>
+                    <select name="num_of_participan" className="selectVol">
                         <option value="" disabled selected>מספר מזמינים</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -47,17 +50,18 @@ export const Shabbat_meat = () => {
                         <option value="8">8</option>
                         <option value="9">9</option>
                         <option value="10">10</option>
-                    </select><br />
+                    </select>
                     <select name="laila" className="selectVol">
                         <option value="" disabled selected>סעודות לבחירה</option>
                         <option value="סעודת ליל שבת">סעודת בוקר שבת</option>
                         <option value=" סעודת בוקר שבת ">סעודת ליל שבת</option>
                         <option value="שתי הסעודות">שתי הסעודות</option>
 
-                    </select><br />
+                    </select>
                     <button className="btnVol" type="submit" >שלח</button>
                 </ form >
             </div>
+            <div className="underLineVol "></div>
 
 
         </div >

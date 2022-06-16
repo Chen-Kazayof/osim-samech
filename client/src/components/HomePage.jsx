@@ -212,7 +212,7 @@ export const HomePage = () => {
             <a className="y_about"> (: החיוך שלהם השמחה שלנו </a>
             </div>
             {/* תמונות בלולאה עוברות */}
-            <div>
+            <div> 
                 <div className="row">
                     <div className="column">
                         <img src="image12.jpg" />
