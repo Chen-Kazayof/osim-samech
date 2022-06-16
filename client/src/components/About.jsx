@@ -2,40 +2,31 @@ import React, { useState, useEffect } from "react";
 import "../styles/About.css"
 
 
-
-const IMAGE_ARRAY = ["/image1.jpg"];
-const ReadMore = ({ children }) => {
-  const text = children;
-  const [isReadMore, setIsReadMore] = useState(true);
-  const toggleReadMore = () => {
-    setIsReadMore(!isReadMore);
-  };
-  return (
-    <div className="back">
-      <p className="text">
-        {isReadMore ? text.slice(0, 9) : text}
-        <span onClick={toggleReadMore} className="read-or-hide">
-          {isReadMore ? "...קרא יותר" : " הראה פחות"}
-        </span>
-      </p>
-    </div>
-  );
-};
+// const IMAGE_ARRAY = ["/image1.jpg"];
+// const ReadMore = ({ children }) => {
+//   const text = children;
+//   const [isReadMore, setIsReadMore] = useState(true);
+//   const toggleReadMore = () => {
+//     setIsReadMore(!isReadMore);
+//   };
+//   return (
+//     <div className="back">
+//       <p className="text">
+//         {isReadMore ? text.slice(0, 9) : text}
+//         <span onClick={toggleReadMore} className="read-or-hide">
+//           {isReadMore ? "...קרא יותר" : " הראה פחות"}
+//         </span>
+//       </p>
+//     </div>
+//   );
+// };
 
 export const About = (props) => {
 
-
-
-  //   const [index, setNumber] = useState(0);
-
-
-  //   useEffect(() => {
-  //     setInterval(() => setNumber(num => num + 1), 1000)
-  //   }, [])
-
   return (
-    <div>
-      <ReadMore>
+    <div className="bod">
+      {/* <ReadMore> */}
+        <br/>
         <p class="title_about">?איך לעשות שמח</p>
         <div className="divAbout">.זה בדיוק מה ששאלתי את עצמי כשיצאתי מחדר הניתוח להתאוששות מגובס כולי וכואב אחרי תאונת דרכים קשה</div>
         <div className="divAbout">.השקט המתוח צרם לי באוזניים. מעין ענן כבד של מחשבות ודאגות מילא את האווירה ללא מילים</div>
@@ -63,7 +54,7 @@ export const About = (props) => {
         <div className="divAbout">,לשיר, לנגן על מיתרי הלב להיות כשכואב</div>
         <div className="divAbout">...להעלות חיוך ושמחה לעשות כיף ואווירה טובה כי</div>
         <p class="sub_title">!באנו לעשות שמח</p>
-      </ReadMore>
+      {/* </ReadMore> */}
     </div>
   )
 

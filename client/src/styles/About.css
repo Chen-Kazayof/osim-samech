@@ -3,12 +3,13 @@
     color:rgb(36, 36, 88);
     font-weight: bold;
     text-align: center;
+    font-family: 'Heebo';
+
 }
 
 .divAbout{
-    text-align: right;
+    text-align: center;
     margin: 20px;
-    margin-right: 50px;
     font-size: 20px;
     color: black;
 }
@@ -18,27 +19,11 @@
     color:rgb(36, 36, 88);
     font-weight: bold;
  }
-.back{
-    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.788) 80%) ,url("/public/images/backgrundAbout.jpg");
+ 
+.bod{
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.788) 80%) ,url("/public/back.jpg");
     height: 100%;
-    margin-top: -30px;
+    font-weight: bold;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-/* .container{
-    position: absolute;
-    top: 10%;
-    left: 23%;
-    width: 50%;
-  }
-    
-  .text{
-    display: inline;
-    width: 100%;
-  }
-    
-  .read-or-hide{
-    color: rgb(192,192,192);
-    cursor: pointer;
-  }  */
+ }

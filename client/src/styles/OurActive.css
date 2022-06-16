@@ -1,0 +1,26 @@
+.title_act{
+    font-size: 40px;
+    color:rgb(36, 36, 88);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Heebo';
+}
+.img_active{
+    /* height: 600px; */
+    width: 800px;
+    margin-bottom: 30px;
+}
+.under_ruler{
+    height: 8pc;
+    background: #0C193D;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+/* .img_active1{
+    height: 19pc;
+    width: 10pc;
+} */
+
+
+

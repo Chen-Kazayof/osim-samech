@@ -14,7 +14,6 @@ ul{
 }
 body ul:nth-child(2){
     font-size: 35px;
-    font-family:Arial, Helvetica, sans-serif;
 }
 li{ 
     color: rgb(6, 6, 73);
@@ -23,7 +22,8 @@ li{
 
 /* אפשרויות לתרומה */
 .subtitle_don{
-    font-size: 25px;
+    font-size: 22px;
+    margin-top: 20px;
     font-weight: bold;
     text-align: center;
     color: rgb(6, 6, 73);
@@ -33,7 +33,7 @@ li{
 .optionDon{
     color: rgb(6, 6, 73);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 .bitDon{
     position: absolute;
@@ -58,16 +58,11 @@ li{
 }
 .kevaDon{
     position: absolute;
-    left: 12.03%;
+    left: 15%;
     right: 70%;
     top: 46.22%;
     bottom: 51.04%;  
 }
-
-/* .imageDonation{
-    background-color:#E8FF31;
-} */
-
 
 /* העיגולים הצהובים */
 .imgDonation1{
@@ -81,7 +76,7 @@ position: absolute;
 }
 .imgDonation2{
     position: absolute;
-    left: 54%;
+    left: 55%;
     right: 21.42%;
     top: 56.22%;
     bottom: 48.04%;
@@ -90,7 +85,7 @@ position: absolute;
 }
 .imgDonation3{
     position: absolute;
-    left: 35%;
+    left: 36%;
     right: 47.99%;
     top: 56.22%;
     bottom: 48.04%;
@@ -99,7 +94,7 @@ position: absolute;
 }
 .imgDonation4{
     position: absolute;
-    left: 14%;
+    left: 15%;
     right: 70%;
     top: 56.22%;
     bottom: 48.04%; 
@@ -120,7 +115,7 @@ position: absolute;
 }
 .textIn3{
     position: absolute;
-    left: 38%; 
+    left: 40%; 
     right: 53.16%;     
     top: 62%;
     bottom: 48.04%;
@@ -130,7 +125,7 @@ position: absolute;
 }
 .textIn4{
     position: absolute;
-    left: 14%; 
+    left: 16.5%; 
     right: 72%;     
     top: 62%;
     bottom: 48.04%;
@@ -141,5 +136,5 @@ position: absolute;
 .textLinkDon{
     text-decoration: none;
     color: black;
-    /* color: rgb(6, 6, 73); */
 }
+

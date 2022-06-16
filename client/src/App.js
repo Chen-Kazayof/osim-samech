@@ -10,11 +10,13 @@ import { About } from './components/About';
 import { OurActive } from './components/OurActive';
 import { Donations } from './components/Donations';
 import { Volonteere } from './components/Volonteere';
-// import { Activities } from './components/Activities';
+import { FunWagonChild } from './components/FunWagonChild';
+import { FunWagonAdult } from './components/FunWagonAdult';
 
 
 
 
+ 
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
       {/* navbar */}
         <Routes>
           <Route exact path='/' element={<HomePage/>} />
+          <Route exact path='/HomePage' element={<HomePage/>} />
           <Route path='/Gallery' element={<Gallery/>} />
           <Route path='/OurActive' element={<OurActive/>}/>
           <Route path='/Shabbat_meat' element={<Shabbat_meat/>}/>
@@ -31,9 +34,8 @@ function App() {
           <Route path='/Donations' element={<Donations/>}/>
           <Route path='/Volonteere' element={<Volonteere/>}/>
           <Route path='/AboutUs' element={<AboutUs/>} />
-          {/* <Route path='/Activities' element={<Activities/>} /> */}
-
-          
+          <Route path='/FunWagonChild' element={<FunWagonChild/>} />
+          <Route path='/FunWagonAdult' element={<FunWagonAdult/>} />
         </Routes>
       </BrowserRouter>
       {/* <HomePage username="chen" />
