@@ -1,3 +1,5 @@
+// import { Icon } from "@material-ui/core";
+import { Icon } from '@iconify/react'
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react"
@@ -13,199 +15,179 @@ export const HomePage = () => {
     const interval = useRef(null);
 
     useEffect(() => {
-        interval.current = setInterval(displayNextImage, 3000);
+        interval.current = setInterval(handleInterval, 3000);
         return () => clearInterval(interval.current)
     }, [])
+
+    const handleInterval = () => {
+        displayNextImage();
+    }
 
     const displayNextImage = () => {
         setIndex(index => (index === IMAGES.length - 1) ? 0 : index + 1);
     }
 
 
-    const imageWrapper = document.querySelector('.image-wrapper')
-    const imageItems = document.querySelectorAll('.image-wrapper > *')
-    const imageLength = imageItems.length
-    const perView = 4
-    let totalScroll = 0
-    const delay = 2000
-
-    // imageWrapper.style.setProperty('--per-view', perView)
-    // for (let i = 0; i < perView; i++) {
-    //     imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
-    // }
-
-    // let autoScroll = setInterval(scrolling, delay)
-
-    // function scrolling() {
-    //     totalScroll++
-    //     if (totalScroll == imageLength + 1) {
-    //         clearInterval(autoScroll)
-    //         totalScroll = 1
-    //         imageWrapper.style.transition = '0s'
-    //         imageWrapper.style.left = '0'
-    //         autoScroll = setInterval(scrolling, delay)
-    //     }
-    //     const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
-    //     imageWrapper.style.left = `-${totalScroll * widthEl}px`
-    //     imageWrapper.style.transition = '.3s'
-    // }
     return (
+
         <div>
-            <img class="yimagetop" src={IMAGES[index]} />
-            {/* <img class="yimage" src="imageover.png" /> */}
+            <img className="yimagetop" src={IMAGES[index]} />
+            <div className="slideshowDots">
+                {IMAGES.map((_, idx) => (
+                    <div
+                        key={idx}
+                        className={`slideshowDot${index === idx ? " active" : ""}`}
+                        onClick={() => {
+                            setIndex(idx);
+                        }}
+                    ></div>
+                ))}
+            </div>
             <div>
-                <h class="ywedo">העשיה שלנו </h>
-
+                <div className="ywedo">העשיה שלנו </div>
             </div>
-            {/* שורה ראשונה */}
-            <div class="row">
-                <div class="column">
+            <div className="y_all_center_img">
+                {/* שורה ראשונה */}
+
+                <div className="row">
                     {/* תמונה ראשונה  */}
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image1.jpg" alt="Paris" />
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="1_chaloka.jpg" alt="chaloka" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>חלוקיס</h2>
+                                    <p>אנחנו שמחים להציג בפני הילדים בכל יום גלידות פופקורן או כל דבר שיגרום להם לשמוח  </p>
+                                </div>
                             </div>
-                            <div class="flip-box-back">
-                                <h2>שולחנות שבת</h2>
-                                <p>שולחנות שבת בשערי צדק</p>
+                        </div>
+                    </div>
+                    {/* תמונה שניה */}
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image8.jpg" alt="caffe" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>קפה ומאפה</h2>
+                                    <p>בכל יום המתנדבים שלנו פה כדי להעניק לחולים קפה ומאפה בכל מחלקות בית החולים</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="column">
+                        {/* תמונה שלישית */}
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="1_tipoach.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>טיפוח</h2>
+                                    <p>המתנדבות שלנו מביאות לבית חולים מחלקת טיפוח כדי ששום חולה לא תרגיש חוסר </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* תמונה שניה */}
-                <div class="column">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image13.jpg" alt="Paris" />
+                {/* שורה שניה */}
+                <div className="row">
+                    <div className="column">
+                        {/* תמונה ראשונה  */}
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="mesameac16.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>פעילות במחלקת קורונה</h2>
+                                    <p>גם בימים קשים כאשר כולים חוששים להיכנס למחלקת קורונה אנו נכנסים למחקה כדי לשמח</p>
+                                </div>
                             </div>
-                            <div class="flip-box-back">
-                                <h2>משמחים</h2>
-                                <p>המתנדבים שלנו פה כדי לשמח אתכם</p>
+                        </div>
+                    </div>
+                    {/* תמונה שניה */}
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="1_pinok.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>עגלת פינוקים לילדים</h2>
+                                    <p>בחלקת ילדים אנחנו דואגים תמיד לפנק אותם בכל מיני פינוקים כדי שבכל זמן השמחה תישאר בפניהם</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="column">
+                        {/* תמונה שלישית */}
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image18.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>עגלת פינוקים למבוגרים</h2>
+                                    <p>האירגון שלנו מעניק למבוגרים עגלת פינוקים בא המבוגרים מקבלים פינוקים בשפע </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column">
+
+
+                {/* שורה שלישית */}
+                <div className="row">
+                    <div className="column">
+                        {/* תמונה ראשונה  */}
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image1.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>סעודות שבת </h2>
+                                    <p>האירגון שלנו בכל שבת דואג לחולים ולמשפחות החולים </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* תמונה שניה */}
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="mesameac21.png" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>המשמחים</h2>
+                                    <p>המשמחים שלנו פה תמיד בשביל לשמוח ולשמח </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     {/* תמונה שלישית */}
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image20.jpg" alt="Paris" />
-                            </div>
-                            <div class="flip-box-back">
-                                <h2>עגלות שמחה</h2>
-                                <p>העגלות שלנו באים לשמח מבוגרים</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            {/* שורה שניה */}
-            <div class="row">
-                <div class="column">
-                    {/* תמונה ראשונה  */}
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image19.jpg" alt="Paris" />
-                            </div>
-                            <div class="flip-box-back">
-                                <h2>שולחנות שבת</h2>
-                                <p>השולחנות שלנו באים להעניק לכם את הטוב ביותר</p>
+                    <div className="column">
+                        <div className="flip-box">
+                            <div className="flip-box-inner">
+                                <div className="flip-box-front">
+                                    <img src="image1.jpg" alt="Paris" />
+                                </div>
+                                <div className="flip-box-back">
+                                    <h2>הכוונה רפואית</h2>
+                                    <p>יש לנו צוות של אנשי מקצוע שנותנים לחולים הכוונה רפאית בלווי אישי</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* תמונה שניה */}
-                <div class="column">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image13.jpg" alt="Paris" />
-                            </div>
-                            <div class="flip-box-back">
-                                <h2>Paris</h2>
-                                <p>What an amazing city</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="column">
-                    {/* תמונה שלישית */}
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image4.jpg" alt="Paris" />
-                            </div>
-                            <div class="flip-box-back">
-                                <h2>אוכל לשבת</h2>
-                                <p>אנחנו תמיד פה להעניק לכם את האוכל הכי טוב כדי שתחוו את השבת בשמחה </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <img class="yhomeloge" src="yhomeloge.png"></img>
-
-            {/* שורה שלישית */}
-            <div class="row">
-                <div class="column">
-                    {/* תמונה ראשונה  */}
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image1.jpg" alt="Paris" />
-                            </div>
-                            <div class="flip-box-back">
-                                <h2>Paris</h2>
-                                <p>What an amazing city</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* תמונה שניה */}
-                <div class="column">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image1.jpg" alt="Paris" />
-                            </div>
-                            <div class="flip-box-back">
-                                <h2>Paris</h2>
-                                <p>What an amazing city</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                {/* תמונה שלישית */}
-                <div class="column">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img src="image1.jpg" alt="Paris" />
-                            </div>
-                            <div class="flip-box-back">
-                                <h2>Paris</h2>
-                                <p>What an amazing city</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div>
-                {/* <Link to="/AboutUs"><a class="yshabut">שולחן שבת</a> </Link> */}
-
-                {/* <button class="yshabut">רישום לסעודות שבת</button> */}
+                <img className="yhomeloge" src="yhomeloge.png"></img>
 
             </div>
 
@@ -217,38 +199,41 @@ export const HomePage = () => {
                     <a className="y_word">ימים בשנה </a>
                     <a className="y_word">מנות בשבוע</a>
                 </div>
-                <div >
+                <div>
                     < CountUp className="y_nav_num" end={2400} duration={5} />
                     < CountUp className="y_nav_num" end={365} duration={5} />
-                    < CountUp className="y_nav_num" end={850} duration={5} />
-                    < CountUp className="y_nav_num" end={13} duration={5} />
+                    < CountUp className="y_nav_num" end={1500} duration={5} />
+                    < CountUp className="y_nav_num" end={7} duration={5} />
 
                 </div>
 
             </div>
             <div>
-                <a className="y_about">העשיה שלנו </a>
+            <a className="y_about"> (: החיוך שלהם השמחה שלנו </a>
             </div>
             {/* תמונות בלולאה עוברות */}
-            <div className="y_img_loop_index">
-                <div class="image-container ">
-                    <div class="image-wrapper">
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" /> </div>
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" />  </div>
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" />   </div>
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" /> </div>
-                        <div>
-                            <img src="image2.jpg" className=" y_img_loop" />   </div>
+            <div> 
+                <div className="row">
+                    <div className="column">
+                        <img src="image12.jpg" />
+                    </div>
+                    <div className="column">
+                        <img src="home_page_4.jpg" />
+                    </div>
+                    <div className="column">
+                        <img src="home_page_1.jpg" />
                     </div>
                 </div>
             </div>
+            <div className="path"></div>
             {/* זה הפס בסוף העמוד  */}
-            <div className="y_under_Line "></div>
-
+            <div className="y_under_Line">
+             <br/><br/><br/>
+                <a href="https://www.facebook.com/dvd4756/" className="icon_size" ><Icon icon="bi:facebook" color="#ED2230" width="34" height="34" /></a>
+                <a href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=/" className="icon_size"><Icon icon="akar-icons:instagram-fill" color="#ED2230" width="34" height="34" /></a>
+                <a href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ" className="icon_size"><Icon icon="akar-icons:youtube-fill" color="#ED2230" width="34" height="34" /></a>
+               
+            </div>
         </div>
 
 

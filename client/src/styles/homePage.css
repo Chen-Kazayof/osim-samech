@@ -1,76 +1,40 @@
 @import 'https://fonts.googleapis.com/css?family=Heebo:400,700&subset=hebrew';
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
-
-.inacspt2 {
-  position: absolute;
-  width: 644px;
-  height: 45px;
-  left: 398px;
-  top: 500px;
-  font-family: 'Heebo';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 37px;
-  line-height: 45px;
-  /* identical to box height */
-  color: #18347E;
-
-
-}
-
-.cancelbtn {
-  position: absolute;
-  width: 174px;
-  height: 70px;
-  left: 687px;
-  top: 650px;
-  margin-top: 5px;
-  border: none;
-  background: #18347E;
-  border-radius: 34px;
-}
-
+/*זה התמונות מתחלפות בהתחלה */
+.yimagetop{
+  width: 100%;
+  height: 600px;
+  }
 img {
-
   max-width: 100%;
-
 }
-
+/* למרכז את כל התמונות באמצע */
+.y_all_center_img{
+  max-width: 100%;
+ }
+ /*  זה לשים שלוש תצמונות אחד ליד השני */
 .column {
-  float: right;
-
   width: 33%;
-  /* padding: 20px; */
 }
 
 .row {
-  /* display: block; */
-  width: 69%;
-  margin-left: auto;
-  margin-right: auto;
-
+ max-width: 100%;
+ padding-left: 17%;
 }
 
 /* Clearfix (clear floats) */
 .row::after {
-  /* content: ""; */
+  content: "";
   clear: both;
   display: table;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5%;
-  margin: auto;
 }
 
 .flip-box {
-  /* background-color: transparent; */
-  width: 300px;
+  width: 100%;
   height: 300px;
   perspective: 1000px;
-
-  
 }
 
 /* This container is needed to position the front and back side */
@@ -91,6 +55,7 @@ img {
 /* Position the front and back side */
 .flip-box-front,
 .flip-box-back {
+  
   position: absolute;
   width: 100%;
   height: 100%;
@@ -101,14 +66,15 @@ img {
 
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
-  /* background-color: #0C193D; */
- padding: 3%;
-  color: black;
+  border-radius: 25px;
+
+  /* border: 8px solid white; */
 }
 
 /* Style the back side */
 .flip-box-back {
-
+  
+  color:#0C193D;
   transform: rotateY(180deg);
 }
 
@@ -119,171 +85,103 @@ img {
   font-weight: 700;
   font-size: 2pc;
   line-height: 8pc;
-  /* top: 200%; */
   color: #F30000;
   text-align: center;
 }
-
-/* למרכז שלוש תמונות אחד ליד השני */
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-
-.yimage {
-  position: absolute;
-  width: 1672.9px;
-  height: 496.83px;
-  left: -144px;
-  top: 547px;
-
-
-}
-
-/*.yimagetop{
-  position:absolute;
-
-} */
-/* .yrow{
-  position:relative;
-
-} */
 /* זה הקישקוש הירוק */
 .yhomeloge {
-  position: absolute;
+  position: relative;
   width: 1459.58px;
   height: 274.5px;
-  left: -2.88px;
-  top: 215%;
-
+  left: 0;
+  top: 220%;
   transform: rotate(2.53deg);
-
 }
-
-/* זה הכפתור לעבור לשולחן שבת */
-.yshabut {
-  text-align: center;
-
-  /* color: #ED2230; */
-  position: absolute;
-  width: 15%;
-  height: 10%;
-  left: 42%;
-  background: #ED2230;
-  border: 1px solid #ED2230;
-  border-radius: 11px;
-  top: 250%;
-}
-
 
 /* זה הסרגל כלים עם המספרים שעולים ויורדים */
-.y_navber_num{
-  position: absolute;
+.y_navber_num {
+  /* position: absolute; */
   width: 100%;
-  bottom: 0;
-  top: 280%;
-  height: 30%;
+  top: 250%;
+  /* height: 30%; */
   background: #0C193D;
+  line-height: 80px;
+
 }
+
 /* הכתב על הסרגל כלים  */
-.y_word{
-  top: 290%;
+.y_word {
   font-family: 'Heebo';
-font-style: normal;
-font-weight: 500;
-font-size: 31px;
-line-height: 46px;
-/* identical to box height */
-padding: 5.5%;
-
-color: #FA4D6C;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  padding: 5.3%;
+  color: #FA4D6C;
 
 }
+
 /* זה הסרגל כלים של מספרים עולים  */
-.y_nav_num{
-  padding: 4.5%;
+.y_nav_num {
+  padding: 4%;
   font-family: 'Heebo';
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
-  line-height: 141px;
-  
-  
+  font-size: 5pc;
   color: #F0F8FF;
 }
-/* הפעילות שלנו */
-.y_about{
-  position: absolute;
-  width: 263px;
-  height: 59px;
-  left: 596px;
-  top:310% ;
+
+/* העשיה שלנו */
+.y_about {
   
   font-family: 'Heebo';
   font-style: normal;
-  font-weight: 700;
   font-size: 40px;
-  line-height: 59px;
-  /* identical to box height */
-  
-  
+  text-align: center;
   color: #223A78;
-  
-}
+  font-weight: 500; 
+  line-height: 150px; 
 
-
-/* כל זה ללואה של התמונות */
-.y_img_loop{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: .5rem;
 }
-
-/* IMAGE */
-.image-container {
- 
-  overflow-x: hidden;
-  max-width: 100%;
-}
-.image-wrapper {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
-  grid-gap: 1.5rem;
-  position: relative;
-  left: 0;
-  transition: .3s;
-}
-.image-wrapper > * {
-  aspect-ratio: 4 / 3;
-}
-.y_img_loop_index{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 330%;
-}
-.y_img_loop_index2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 320%;
-}
-
 /* זה הפס הכחול בתחתית העמוד  */
 .y_under_Line {
 
   position: absolute;
   width: 100%;
-  bottom: 0;
-  top: 380%;
-  height: 30%;
   background: #0C193D;
+  top: 280pc; 
+  height: 30%; 
 
 }
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}  */
+.slideshowDots {
+  /* margin-top: 25px; */
+  text-align: center;
+}
+
+.slideshowDot {
+  height: 8px;
+  width: 8px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slideshowDot.active {
+  background-color: #356D9C;
+}
+ 
+.contact_home{ 
+  /* display: flex; */ 
+  /* padding: auto; */ 
+  text-align:right; 
+ 
+  /* margin-right: 50px; */ 
+  margin-top: 5%; 
+margin-right: 5%; 
+  font-family: 'Heebo'; 
+  font-weight: 300; 
+  font-size: 1pc; 
+  color: white; 
+} 
+

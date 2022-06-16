@@ -1,64 +1,70 @@
 import "../styles/Shabbat_meat.css"
+import "../styles/volonteere.css"
+
+import emailjs from '@emailjs/browser'
+import { useNavigate } from 'react-router-dom';
 
 
 export const Shabbat_meat = () => {
 
+    const navigate = useNavigate();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_7pcoanl', 'template_zkerp75', e.target, 'QWU5_t71cSv2nZuDU')
+            .then((result) => {
+                console.log(result);
+                navigate('/Submit_Shabbat')
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+
 
     return (
         <div>
-         <div className="m_img_before">
-         <a className="aa">סעודות שבת</a></div> 
+            <div className="m_img_before">
+                <br />  <br />  <br />
+                <a className="m_aa">סעודות שבת</a></div>
 
+            <div className='shabos'>
+            <div className="titleDivVol">טופס הצטרפות</div><br/>
 
-       <div>
-       <h3 className="m_h3">: הזמנת סעודות שבת</h3>
-         </div> 
-        <div class="shabos">
-            
-            <label for="lname">שם המזמין: </label>
-            <input type="text" class="n" name="lname"/><br />
+                <form onSubmit={sendEmail} className="formVol">
 
-            <label for="lname">מספר טלפון: </label>
-            <input type="text" class="r" name="lname"/><br />
+                    {/* <a className="m_invitation_meal"> הזמנת סעודות שבת</a><br /> */}
+                    <input type="text" className="textVol" name="f_name" placeholder="שם המזמין"></input>
+                    <input type="email" className="textVol" name="gmail_address" placeholder="כתובת מייל"></input>
+                    <input type="number" className="textVol" name="tel_num" placeholder="מספר טלפון"></input>
+                    <select name="num_of_participan" className="selectVol">
+                        <option value="" disabled selected>מספר מזמינים</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <select name="laila" className="selectVol">
+                        <option value="" disabled selected>סעודות לבחירה</option>
+                        <option value="סעודת ליל שבת">סעודת בוקר שבת</option>
+                        <option value=" סעודת בוקר שבת ">סעודת ליל שבת</option>
+                        <option value="שתי הסעודות">שתי הסעודות</option>
 
-            <label for="lname">דוא"ל: </label>
-            <input type="text" class="s" name="lname"/><br />
-
-            {/* <!-- <select name="op" id="option">
-                <option value="op1">1</option>
-                <option value="op1">2</option>
-                <option value="op1">3</option>
-    
-                 */}
-    
-            {/* </select> --> */}
-            <label for="lname">מספר משתתפים: </label>
-            <input type="text" class="lname" name="lname"/>
-           
-        </div>
-       
-<div>
-<h3 className="m_h3">: סעודות לבחירה</h3> 
-        {/* <form action="/action_page.php"/> */}
-          <input type="radio" id="html" name="laila" value="סעודת ליל שבת"/>
-           <label for="html">סעודת ליל שבת</label><br />
-           <input type="radio" id="html" name="boker" value="סעודת בוקר שבת"/>
-           <label for="html">סעודת בוקר שבת </label><br />
-            
-            {/* </ form > */}
-</div>
-       
-
-            <div>
-                <button  id= "sub" type="button" onclick="alert('התקבל')">שלח</button>
+                    </select>
+                    <button className="btnVol" type="submit" >שלח</button>
+                </ form >
             </div>
-        
-   
+            <div className="underLineVol "></div>
 
-        </div>
+
+        </div >
 
     )
 }
-
-
-      

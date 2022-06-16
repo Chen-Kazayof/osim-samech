@@ -4,16 +4,16 @@ export const NavBar = () => {
 
     return (
         
-        <div class="topnav ">
+        <div className="topnav ">
             <br></br>
-            <Link to="/"><a id="homePage">דף הבית  </a>  </Link>
-            <Link to ="/About"><a>אודות</a> </Link>
-            <Link to="/Gallery"><a>גלריה</a> </Link>
-            <Link to ="/OurActive"><a>הפעילות שלנו</a> </Link>
-            <Link to="/shabbat_meat"><a>רישום לשבת</a> </Link>
-            <Link to="/Donations"><a>תרומות</a> </Link>
-            <Link to="/Volonteere"><a>התנדבות</a> </Link>
-            <Link to ="/AboutUs"><a>צור קשר</a></Link>
+            <Link to="/">דף הבית</Link>
+            <Link to ="/About">אודות </Link>
+            <Link to="/Gallery">גלריה </Link>
+            <Link to ="/OurActive">הפעילות שלנו </Link>
+            <Link to="/shabbat_meat">רישום לשבת </Link>
+            <Link to="/Donations">תרומות </Link>
+            <Link to="/Volonteere">התנדבות </Link>
+            <Link to ="/ContactUs">צור קשר</Link>
             <img src="/imagelog.png" alt="Logo image" />
             {/* <div className="underLine"></div> */}
 

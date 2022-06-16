@@ -11,7 +11,7 @@ export const Volonteere = () => {
     emailjs.sendForm('service_7pcoanl', 'template_b72frgk', e.target, 'QWU5_t71cSv2nZuDU')
       .then((result) => {
         console.log(result);
-        navigate('/Submit_Shabbat')
+        navigate('/Vol_sec')
       })
       .catch((error) => {
         console.log(error);
