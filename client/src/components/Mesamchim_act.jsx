@@ -16,7 +16,7 @@ export const Mesamchim_act = (props) => {
                         <img className="m_img_meshamchim" src="mesameac14.jpg" alt="Landscape" />
                     </li>
                     <li className-="line-mesameach m_li">
-                        <img className="m_img_meshamchim" src="mesameac14.jpg" alt="Landscape" />
+                        <img className="m_img_meshamchim" src="mesameac2.png" alt="Landscape" />
                     </li >
                     <li className-="line-mesameach m_li">
                         <img className="m_img_meshamchim" src="mesameac6.jpg" alt="Landscape" />
@@ -28,10 +28,10 @@ export const Mesamchim_act = (props) => {
                         <img className="m_img_meshamchim" src="mesameac5.jpg" alt="Landscape" />
                     </li>
                     <li className-="line-mesameach m_li">
-                        <img className="m_img_meshamchim" src="mesameac14.jpg" alt="Landscape" />
+                        <img className="m_img_meshamchim" src="mesameac3.jpg" alt="Landscape" />
                     </li>
                     <li className-="line-mesameach m_li">
-                        <img className="m_img_meshamchim" src="mesameac14.jpg" alt="Landscape" />
+                        <img className="m_img_meshamchim" src="mesameac7.jpg" alt="Landscape" />
                     </li>
                     <li className-="line-mesameach m_li">
                         <img className="m_img_meshamchim" src="mesameac8.jpg" alt="Landscape" />
@@ -44,7 +44,7 @@ export const Mesamchim_act = (props) => {
                         <img className="m_img_meshamchim" src="mesameac12.jpg" alt="Landscape" />
                     </li>
                     <li className-="line-mesameach m_li">
-                        <img className="m_img_meshamchim" src="mesameac12.jpg" alt="Landscape" />
+                        <img className="m_img_meshamchim" src="mesameac1.png" alt="Landscape" />
                     </li>
 
                 </ul>

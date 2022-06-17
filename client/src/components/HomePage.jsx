@@ -6,7 +6,7 @@ import { useState } from "react"
 import CountUp from 'react-countup';
 import "../styles/homePage.css"
 
-const IMAGES = ["/image3.jpg", "/image30.jpg", "/image3.jpg"]
+const IMAGES = ["/image3.jpg", "/image30.jpg", "/doby.jpeg","/doby_2.jpeg"]
 
 export const HomePage = () => {
 
@@ -49,23 +49,23 @@ export const HomePage = () => {
             <div className="y_all_center_img">
                 {/* שורה ראשונה */}
 
-                <div className="row">
+                <div className="y_row">
                     {/* תמונה ראשונה  */}
-                    <div className="column">
+                    <div className="y_column">
                         <div className="flip-box">
                             <div className="flip-box-inner">
                                 <div className="flip-box-front">
                                     <img src="1_chaloka.jpg" alt="chaloka" />
                                 </div>
                                 <div className="flip-box-back">
-                                    <h2>חלוקיס</h2>
+                                    <h2>חלוקידס</h2>
                                     <p>אנחנו שמחים להציג בפני הילדים בכל יום גלידות פופקורן או כל דבר שיגרום להם לשמוח  </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {/* תמונה שניה */}
-                    <div className="column">
+                    <div className="y_column">
                         <div className="flip-box">
                             <div className="flip-box-inner">
                                 <div className="flip-box-front">
@@ -78,7 +78,7 @@ export const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="column">
+                    <div className="y_column">
                         {/* תמונה שלישית */}
                         <div className="flip-box">
                             <div className="flip-box-inner">
@@ -94,8 +94,8 @@ export const HomePage = () => {
                     </div>
                 </div>
                 {/* שורה שניה */}
-                <div className="row">
-                    <div className="column">
+                <div className="y_row">
+                    <div className="y_column">
                         {/* תמונה ראשונה  */}
                         <div className="flip-box">
                             <div className="flip-box-inner">
@@ -110,7 +110,7 @@ export const HomePage = () => {
                         </div>
                     </div>
                     {/* תמונה שניה */}
-                    <div className="column">
+                    <div className="y_column">
                         <div className="flip-box">
                             <div className="flip-box-inner">
                                 <div className="flip-box-front">
@@ -124,7 +124,7 @@ export const HomePage = () => {
                         </div>
 
                     </div>
-                    <div className="column">
+                    <div className="y_column">
                         {/* תמונה שלישית */}
                         <div className="flip-box">
                             <div className="flip-box-inner">
@@ -142,8 +142,8 @@ export const HomePage = () => {
 
 
                 {/* שורה שלישית */}
-                <div className="row">
-                    <div className="column">
+                <div className="y_row">
+                    <div className="y_column">
                         {/* תמונה ראשונה  */}
                         <div className="flip-box">
                             <div className="flip-box-inner">
@@ -158,7 +158,7 @@ export const HomePage = () => {
                         </div>
                     </div>
                     {/* תמונה שניה */}
-                    <div className="column">
+                    <div className="y_column">
                         <div className="flip-box">
                             <div className="flip-box-inner">
                                 <div className="flip-box-front">
@@ -173,11 +173,11 @@ export const HomePage = () => {
 
                     </div>
                     {/* תמונה שלישית */}
-                    <div className="column">
+                    <div className="y_column">
                         <div className="flip-box">
                             <div className="flip-box-inner">
                                 <div className="flip-box-front">
-                                    <img src="image1.jpg" alt="Paris" />
+                                    <img src="h7.jpg" alt="Paris" />
                                 </div>
                                 <div className="flip-box-back">
                                     <h2>הכוונה רפואית</h2>
@@ -194,10 +194,10 @@ export const HomePage = () => {
             <div className="y_navber_num">
                 <div>
 
-                    <a className="y_word">בתי חולים </a>
-                    <a className="y_word">מתנדבים </a>
-                    <a className="y_word">ימים בשנה </a>
-                    <a className="y_word">מנות בשבוע</a>
+                    <a className="y_word_1">בתי חולים </a>
+                    <a className="y_word_2">מתנדבים </a>
+                    <a className="y_word_3">ימים בשנה </a>
+                    <a className="y_word_4">מנות בשבוע</a>
                 </div>
                 <div>
                     < CountUp className="y_nav_num" end={2400} duration={5} />
@@ -213,15 +213,15 @@ export const HomePage = () => {
             </div>
             {/* תמונות בלולאה עוברות */}
             <div> 
-                <div className="row">
-                    <div className="column">
-                        <img src="image12.jpg" />
+                <div className="y_row">
+                    <div className="y_column">
+                        <img src="image12.jpg"/>
                     </div>
-                    <div className="column">
-                        <img src="home_page_4.jpg" />
+                    <div className="y_column">
+                        <img src="home_page_4.jpg"/>
                     </div>
-                    <div className="column">
-                        <img src="home_page_1.jpg" />
+                    <div className="y_column">
+                        <img src="home_page_1.jpg"/>
                     </div>
                 </div>
             </div>

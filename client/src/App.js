@@ -7,7 +7,6 @@ import { Mesamchim_act } from './components/Mesamchim_act';
 import { Shabbat_meat } from './components/Shabbat_meat';
 import { About } from './components/About';
 import { Submit_Shabbat } from './components/Submit_Shabbat';
-import { Activities } from './components/Activities';
 import { Donations } from './components/Donations';
 import { Volonteere } from './components/Volonteere';
 import { ContactUs } from './components/ContactUs';
@@ -35,7 +34,6 @@ function App() {
           <Route exact path='/HomePage' element={<HomePage/>} />
           <Route path='/Gallery' element={<Gallery/>} />
           <Route path='/ContactUs' element={<ContactUs/>} />
-          <Route path='/Activities' element={<Activities/>}/>
           <Route path='/Shabbat_meat' element={<Shabbat_meat/>}/>
           <Route path='/About' element={<About/>}/>
           <Route path='/Donations' element={<Donations/>}/>
@@ -46,7 +44,6 @@ function App() {
           <Route path='/Act_tipach' element={<Act_tipach/>} />
           <Route path='/Act_help' element={< Act_help/>} />
           <Route path='/Vol_sec' element={<Vol_sec/>} />
-
           <Route path='/OurActive' element={<OurActive/>} />
           <Route path='/FunWagonChild' element={<FunWagonChild/>} />
           <Route path='/FunWagonAdult' element={<FunWagonAdult/>} />

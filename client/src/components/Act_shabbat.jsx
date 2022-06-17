@@ -18,7 +18,7 @@ export const Act_shabbat = (props) => {
                         <img className="m_img_meshamchim" src="s2.jpg" alt="Landscape" />
                     </li >
                     <li className-="line-mesameach m_li">
-                        <img className="m_img_meshamchim" src="s3.jpg" alt="Landscape" />
+                        <img className="m_img_meshamchim" src="s9.jpg" alt="Landscape" />
                     </li>
                     <li className-="line-mesameach m_li">
                         <img className="m_img_meshamchim" src="s4.jpg" alt="Landscape" />
@@ -36,9 +36,9 @@ export const Act_shabbat = (props) => {
                         <img className="m_img_meshamchim" src="s8.jpg" alt="Landscape" />
                     </li>
 
-                    <li className-="line-mesameach m_li">
+                    {/* <li className-="line-mesameach m_li">
                         <img className="m_img_meshamchim" src="s9.jpg" alt="Landscape" />
-                    </li>
+                    </li> */}
 
                 </ul>
 
@@ -70,27 +70,34 @@ export const Act_shabbat = (props) => {
                         מרק חם ומהביל כמיטב המסורת
                         מנות עיקריות מפוארות עם שלל תוספות
                         גם בסעודה שניה תהנו ממגוון סלטים, דגים, סוגי קוגלים וטשולנט.
+                    </div>
+                    <div className="class_mesamach">
+
                         הכל בהגשת של מתנדבים מדהימים, שעושים הכל באדיבות ובחיוך
                         ועוד לא סיימנו,
                         קינוח מתוק ומפנק לצד פיצוחים ועוד המממון הפתעות
+                    </div>
+                    <div className="class_mesamach">
                         עוגות, שתיה מתוקה, מגזינים
                         והכי חשוב, האוירה!!!
                         אוירת שבת של רוממות וגיבוש
                         של אחים כולנו,
-                        עם שירה ושמחה, דברי תורה. מעין עולם הבא!!!
-
+                        עם שירה ושמחה,
+                    </div>
+                    <div className="class_mesamach">   דברי תורה. מעין עולם הבא!!!
                         תוכלו להנות גם במחלקות ממשלוח עד אליכם הכולל את כל
                         השפע הזה.
                         תרגישו בבית
-                        דואגים לכם "לגוף ולנשמה"
-                        שבת שלום
-                        </div>
-                    </div>
-                    <div className="y_under_Line_mesamchim"></div>
-                </div>
+                        דואגים לכם "לגוף ולנשמה"</div>
+                    <div className="class_mesamach"> שבת שלום</div>
 
+
+                </div>
+                <div className="y_under_Line_mesamchim"></div>
             </div>
 
-            )
+        </div>
+
+    )
 
 }
