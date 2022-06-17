@@ -46,6 +46,8 @@ export const Donations = (props) => {
         <p className="textIn4"><a className="textLinkDon" href="https://office.kesherhk.info/Clearing.aspx?id=11458" target="_blank">לחץ כאן</a></p>
       </div>
 
+      <div className="under_ruler_don"> </div>
+
     </div>
 
   )

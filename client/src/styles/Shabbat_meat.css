@@ -21,19 +21,19 @@
 .m_invitation_meal{
     /* הזמנת סעודת שבת: */
 
-font-family: 'Heebo';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 10pc;
-text-align: center;
-color: #223A78;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 10pc;
+    text-align: center;
+    color: #223A78;
 }
 .m_f_name{
-box-sizing: border-box;
-left: 56.4%;
-right: 11.78%;
-width: 50%;
-height: 2pc;
-border: 1px solid #ED2230;
+    box-sizing: border-box;
+    left: 56.4%;
+    right: 11.78%;
+    width: 50%;
+    height: 2pc;
+    border: 1px solid #ED2230;
 }

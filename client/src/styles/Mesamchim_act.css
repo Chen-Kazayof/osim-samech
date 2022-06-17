@@ -130,9 +130,9 @@ li .m_img_meshamchim:hover {
 }
 .y_under_Line_mesamchim{
     position: absolute;
-  width: 100%;
-  bottom: 0;
-  top: 170%;
-  height: 20%;
-  background: #0C193D;
+    width: 100%;
+    bottom: 0;
+    top: 200%;
+    height: 20%;
+    background: #0C193D;
 }

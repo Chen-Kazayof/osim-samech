@@ -61,8 +61,6 @@ export const Volonteere = () => {
             <option value="ד">ד</option>
           </select>
 
-
-
           <button type="submit" className="btnVol">שלח</button>
         </form>
         <div className="underLineVol "></div>
