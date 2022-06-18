@@ -67,8 +67,6 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
- 
-    
 }
 
 .topnav a:hover {
@@ -87,27 +85,10 @@ yimg{
   /* background: url(imagelog.png); */
 }
 
-
-
-
-
-
 .topnav img {
   position: absolute;
   width: 213px;
   height: 181px;
   left: 12px;
   top: 9px;
-  
-
 }
-/* .underLine{
-
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  top: 100%;
-  height: 10%;
-  background: #0C193D;
-  
-} */

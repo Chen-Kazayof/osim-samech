@@ -42,8 +42,8 @@ export const Volonteere = () => {
             <option value="דרום">דרום</option>
             <option value="ירושלים">ירושלים</option>
           </select>
-          <input type="text" className="textVol" name="phone" placeholder="טלפון ליצירת קשר"></input>
-          <input type="text" className="textVol" name="email" placeholder='דוא"ל'></input>
+          <input type="number" className="textVol" name="phone" placeholder="טלפון ליצירת קשר"></input>
+          <input type="email" className="textVol" name="email" placeholder='דוא"ל'></input>
           <select name="hospital" id="hospital" className="selectVol">
             <option value="" disabled selected>בית חולים</option>
             <option value="שערי צדק">שערי צדק</option>
@@ -55,10 +55,16 @@ export const Volonteere = () => {
           </select>
           <select name="Volunteering" id="Volunteering" className="selectVol">
             <option value="" disabled selected>תחום התנדבות</option>
-            <option value="א">א</option>
-            <option value="ב">ב</option>
-            <option value="ג">ג</option>
-            <option value="ד">ד</option>
+            <option value="חלוקת קפה ומאפה וכריכים">חלוקת קפה ומאפה וכריכים</option>
+            <option value="איפור ולק ג'ל ">איפור ולק ג'ל </option>
+            <option value="פעילות במחלקות קורונה">פעילות במחלקות קורונה</option>
+            <option value="עגלת הפינוקים לילדים">עגלת הפינוקים לילדים</option>
+            <option value="עגלת הפינוקים למבוגרים">עגלת הפינוקים למבוגרים</option>
+            <option value="סעודות שבת">סעודות שבת</option>
+            <option value="המשמחים">המשמחים</option>
+            <option value="מסיבות לילדים חולים ובעלי מוגבלויות">מסיבות לילדים חולים ובעלי מוגבלויות</option>
+            <option value="חלוקת מרקים חמים">חלוקת מרקים חמים</option>
+            <option value="פינות קפה ומאפה במחלקות">פינות קפה ומאפה במחלקות</option>
           </select>
 
 
