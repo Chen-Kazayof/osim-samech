@@ -1,4 +1,4 @@
-// import { Icon } from "@material-ui/core";
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { Icon } from '@iconify/react'
 import { useEffect } from "react";
 import { useRef } from "react";
@@ -29,7 +29,6 @@ export const HomePage = () => {
 
 
     return (
-
         <div>
             <img className="yimagetop" src={IMAGES[index]} />
             <div className="slideshowDots">
@@ -225,17 +224,17 @@ export const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className="path"></div>
             {/* זה הפס בסוף העמוד  */}
             <div className="y_under_Line">
-             <br/><br/><br/>
-                <a href="https://www.facebook.com/dvd4756/" className="icon_size" ><Icon icon="bi:facebook" color="#ED2230" width="34" height="34" /></a>
-                <a href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=/" className="icon_size"><Icon icon="akar-icons:instagram-fill" color="#ED2230" width="34" height="34" /></a>
-                <a href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ" className="icon_size"><Icon icon="akar-icons:youtube-fill" color="#ED2230" width="34" height="34" /></a>
-               
+                <p className="title_member">:חברי הוועדה</p>
+                <img className="img_under_ruler" src="rulerMember.png" alt="not" />
+                <p className="p_spice"></p>
+                <a href="https://www.facebook.com/dvd4756/" className="icon_size" target="_blank"><Icon icon="bi:facebook" color="#ED2230" width="34" height="34" /></a>
+                <a href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=/" className="icon_size" target="_blank"><Icon icon="akar-icons:instagram-fill" color="#ED2230" width="34" height="34" /></a>
+                <a href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ" className="icon_size" target="_blank"><Icon icon="akar-icons:youtube-fill" color="#ED2230" width="34" height="34" /></a>
+           <br/> <br/> 
+            <div> <Link to="/Design" className="design">אפיון ועיצוב אתרים </Link></div>
             </div>
         </div>
-
-
     )
 }

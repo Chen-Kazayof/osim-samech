@@ -47,7 +47,7 @@ export const Act_tipach = (props) => {
 ולהמשיך לקוות שבסוף הכל יסתדר יופי
                         </div>
                     </div>
-                    <div className="y_under_Line_mesamchim"></div>
+                    <div className="y_under_Line_mesamchim" ></div>
                 </div>
 
             </div>

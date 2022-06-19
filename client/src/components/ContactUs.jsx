@@ -18,12 +18,13 @@ export const ContactUs = () => {
             <h4 className="m_h4"> david@osimsameach.org.il : מייל </h4>
             <img className="size_of_img" src="m_icom.png"></img>
                 <br/><br/>
-                <div><h4 className="m_h4">עקבו אחרנו</h4></div>
+                <div><h4 className="m_h4">עקבו אחרינו</h4></div>
                 <div className="centered">
-                    <a href="https://www.facebook.com/dvd4756/" className="icon_size"  ><Icon icon="bi:facebook" color="#223A78" width="34" height="34" /></a>
-                    <a href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=/" className="icon_size"><Icon icon="akar-icons:instagram-fill" color="#223A78" width="34" height="34"/></a>
-                    <a href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ" className="icon_size"><Icon icon="akar-icons:youtube-fill" color="#223A78" width="34" height="34"/></a>
+                    <a href="https://www.facebook.com/dvd4756/" className="icon_size" target="_blank" ><Icon icon="bi:facebook" color="#223A78" width="34" height="34" /></a>
+                    <a href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=/" className="icon_size" target="_blank" ><Icon icon="akar-icons:instagram-fill" color="#223A78" width="34" height="34"/></a>
+                    <a href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ" className="icon_size" target="_blank" ><Icon icon="akar-icons:youtube-fill" color="#223A78" width="34" height="34"/></a>
                 </div>
+                <br/>
               {/* זה הפס בסוף העמוד  */}
               <div className="y_under_Line_contact "/>
         </div>

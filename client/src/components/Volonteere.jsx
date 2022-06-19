@@ -67,8 +67,6 @@ export const Volonteere = () => {
             <option value="פינות קפה ומאפה במחלקות">פינות קפה ומאפה במחלקות</option>
           </select>
 
-
-
           <button type="submit" className="btnVol">שלח</button>
         </form>
         <div className="underLineVol "></div>

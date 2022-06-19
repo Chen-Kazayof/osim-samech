@@ -17,7 +17,7 @@ import { Vol_sec } from './components/Vol_sec';
 import { FunWagonChild } from './components/FunWagonChild';
 import { FunWagonAdult } from './components/FunWagonAdult';
 import { OurActive } from './components/OurActive';
-
+import { Design } from './components/Design';
 
 
 
@@ -47,6 +47,8 @@ function App() {
           <Route path='/OurActive' element={<OurActive/>} />
           <Route path='/FunWagonChild' element={<FunWagonChild/>} />
           <Route path='/FunWagonAdult' element={<FunWagonAdult/>} />
+          <Route path='/Design' element={<Design/>} />
+
         </Routes>
       </BrowserRouter>
     </div>

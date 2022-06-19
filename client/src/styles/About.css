@@ -27,3 +27,12 @@
     background-size: cover;
     background-repeat: no-repeat;
  }
+ .under_ruler_about{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 250%;
+    height: 20%;
+    background: #0C193D;
+
+ }

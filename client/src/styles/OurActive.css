@@ -11,16 +11,17 @@
     margin-bottom: 30px;
 }
 .under_ruler{
-    height: 10pc;
-    background: #0C193D;
-    /* position: fixed; */
-    bottom: 0;
+    position: absolute;
     width: 100%;
+    bottom: 0;
+    top: 370%;
+    height: 20%;
+    background: #0C193D;
 }
 /* .img_active1{
     height: 19pc;
     width: 10pc;
 } */
-.img_under_ruler{
-    width: 10pc;
-}
+/* .img_under_ruler{
+    width: 10px;
+} */

@@ -139,3 +139,11 @@ position: absolute;
     color: black;
 }
 
+.under_ruler_don{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 95%;
+    height: 10%;
+    background: #0C193D;
+}

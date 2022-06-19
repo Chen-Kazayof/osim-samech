@@ -54,6 +54,7 @@ export const About = (props) => {
         <div className="divAbout">,לשיר, לנגן על מיתרי הלב להיות כשכואב</div>
         <div className="divAbout">...להעלות חיוך ושמחה לעשות כיף ואווירה טובה כי</div>
         <p class="sub_title">!באנו לעשות שמח</p>
+        <div className="under_ruler_about"></div>
       {/* </ReadMore> */}
     </div>
   )

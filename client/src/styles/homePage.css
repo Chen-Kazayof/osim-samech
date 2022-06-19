@@ -159,15 +159,6 @@ img {
 
 }
 
-/* זה הפס הכחול בתחתית העמוד  */
-.y_under_Line {
-  position: absolute;
-  width: 100%;
-  background: #0C193D;
-  top: 185pc;
-  height: 30%;
-
-}
 
 .slideshowDots {
   /* margin-top: 25px; */
@@ -245,4 +236,26 @@ img {
   justify-content: center;
   position: absolute;
   top: 340%;
+}
+
+/* זה הפס הכחול בתחתית העמוד  */
+.y_under_Line {
+  position: absolute;
+  width: 100%;
+  background: #0C193D;
+  top: 185pc;
+  height: 55%;
+}
+
+.title_member{
+  font-size: 20px;
+  color: white;
+  font-family: 'Heebo';
+}
+
+.img_under_ruler{
+  background-color: #0C193D;
+}
+.p_spice{
+  padding-top: 15px;
 }
