@@ -18,6 +18,7 @@ import { FunWagonChild } from './components/FunWagonChild';
 import { FunWagonAdult } from './components/FunWagonAdult';
 import { OurActive } from './components/OurActive';
 import { Design } from './components/Design';
+import { CommitteeMembers } from './components/CommitteeMembers';
 
 
 
@@ -48,6 +49,7 @@ function App() {
           <Route path='/FunWagonChild' element={<FunWagonChild/>} />
           <Route path='/FunWagonAdult' element={<FunWagonAdult/>} />
           <Route path='/Design' element={<Design/>} />
+          <Route path='/CommitteeMembers' element={<CommitteeMembers/>} />
 
         </Routes>
       </BrowserRouter>

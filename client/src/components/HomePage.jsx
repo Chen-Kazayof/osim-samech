@@ -226,14 +226,11 @@ export const HomePage = () => {
             </div>
             {/* זה הפס בסוף העמוד  */}
             <div className="y_under_Line">
-                <p className="title_member">:חברי הוועדה</p>
-                <img className="img_under_ruler" src="rulerMember.png" alt="not" />
-                <p className="p_spice"></p>
+                <div> <Link to="/CommitteeMembers" className="title_member">חברי הוועדה </Link></div>
+                <div> <Link to="/Design" className="title_member">אפיון ועיצוב אתרים </Link></div>
                 <a href="https://www.facebook.com/dvd4756/" className="icon_size" target="_blank"><Icon icon="bi:facebook" color="#ED2230" width="34" height="34" /></a>
                 <a href="https://instagram.com/osimsameach?igshid=YTM0ZjI4ZDI=/" className="icon_size" target="_blank"><Icon icon="akar-icons:instagram-fill" color="#ED2230" width="34" height="34" /></a>
                 <a href="https://youtube.com/channel/UCnVhKrm6CQ_PoSFwg1fEIYQ" className="icon_size" target="_blank"><Icon icon="akar-icons:youtube-fill" color="#ED2230" width="34" height="34" /></a>
-           <br/> <br/> 
-            <div> <Link to="/Design" className="design">אפיון ועיצוב אתרים </Link></div>
             </div>
         </div>
     )

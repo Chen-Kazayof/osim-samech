@@ -244,13 +244,15 @@ img {
   width: 100%;
   background: #0C193D;
   top: 185pc;
-  height: 55%;
+  height: 20%;
 }
 
 .title_member{
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   font-family: 'Heebo';
+  margin-left: 70%;
+
 }
 
 .img_under_ruler{
