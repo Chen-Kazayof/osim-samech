@@ -8,7 +8,7 @@ export const Volonteere = () => {
   const navigate = useNavigate();
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_5uww0m8', 'template_5q222ff', e.target, 'QWU5_t71cSv2nZuDU')
+    emailjs.sendForm('service_5uww0m8', 'template_5q222ff', e.target, 'GSeQcFD5Z1gOKdrF4')
       .then((result) => {
         console.log(result);
         navigate('/Vol_sec')
