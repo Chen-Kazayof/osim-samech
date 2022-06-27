@@ -12,7 +12,7 @@ export const Shabbat_meat = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_7pcoanl', 'template_zkerp75', e.target, 'QWU5_t71cSv2nZuDU')
+        emailjs.sendForm('service_5uww0m8', 'template_xzmo35j', e.target, 'QWU5_t71cSv2nZuDU')
             .then((result) => {
                 console.log(result);
                 navigate('/Submit_Shabbat')

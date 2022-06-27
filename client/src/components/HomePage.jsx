@@ -226,6 +226,7 @@ export const HomePage = () => {
             </div>
             {/* זה הפס בסוף העמוד  */}
             <div className="y_under_Line">
+                <br/>  
                 <div> <Link to="/CommitteeMembers" className="title_member">חברי הוועדה </Link></div>
                 <div> <Link to="/Design" className="title_member">אפיון ועיצוב אתרים </Link></div>
                 <a href="https://www.facebook.com/dvd4756/" className="icon_size" target="_blank"><Icon icon="bi:facebook" color="#ED2230" width="34" height="34" /></a>
